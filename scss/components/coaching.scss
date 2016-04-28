@@ -1,0 +1,66 @@
+/*coaching*/
+.coaching{
+	text-align: center;
+
+	.container{
+		padding: 45px 0 60px;
+	}
+
+	.more-link{
+		float: right;
+		margin: 0 80px 0 0;
+	}
+
+	h2{
+		margin: 0 300px 25px;
+	}
+
+	h3{
+		margin: 0 0 50px;
+	}
+
+	h4{
+		margin: 0 80px 25px;
+		font-family: Roboto-Bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: left;
+	}
+
+	ul{
+		margin: 0 80px;
+
+		li{
+			margin: 0 0 20px;
+			padding: 0 0 0 30px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+			position: relative;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 5px;
+				left: -5px;
+				width: 11px;
+				height: 11px;
+				border-right: 4px solid #4fc754;
+				border-bottom: 4px solid #4fc754;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+/*end of coaching*/

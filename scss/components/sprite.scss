@@ -1,0 +1,404 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$about-before-bg-name: 'about-before-bg';
+$about-before-bg-x: 318px;
+$about-before-bg-y: 235px;
+$about-before-bg-offset-x: -318px;
+$about-before-bg-offset-y: -235px;
+$about-before-bg-width: 40px;
+$about-before-bg-height: 22px;
+$about-before-bg-total-width: 401px;
+$about-before-bg-total-height: 346px;
+$about-before-bg-image: 'sprite.png';
+$about-before-bg: (318px, 235px, -318px, -235px, 40px, 22px, 401px, 346px, 'sprite.png', 'about-before-bg', );
+$arrow-left-green-name: 'arrow-left-green';
+$arrow-left-green-x: 363px;
+$arrow-left-green-y: 0px;
+$arrow-left-green-offset-x: -363px;
+$arrow-left-green-offset-y: 0px;
+$arrow-left-green-width: 38px;
+$arrow-left-green-height: 69px;
+$arrow-left-green-total-width: 401px;
+$arrow-left-green-total-height: 346px;
+$arrow-left-green-image: 'sprite.png';
+$arrow-left-green: (363px, 0px, -363px, 0px, 38px, 69px, 401px, 346px, 'sprite.png', 'arrow-left-green', );
+$arrow-left-name: 'arrow-left';
+$arrow-left-x: 318px;
+$arrow-left-y: 83px;
+$arrow-left-offset-x: -318px;
+$arrow-left-offset-y: -83px;
+$arrow-left-width: 45px;
+$arrow-left-height: 83px;
+$arrow-left-total-width: 401px;
+$arrow-left-total-height: 346px;
+$arrow-left-image: 'sprite.png';
+$arrow-left: (318px, 83px, -318px, -83px, 45px, 83px, 401px, 346px, 'sprite.png', 'arrow-left', );
+$arrow-right-green-name: 'arrow-right-green';
+$arrow-right-green-x: 318px;
+$arrow-right-green-y: 166px;
+$arrow-right-green-offset-x: -318px;
+$arrow-right-green-offset-y: -166px;
+$arrow-right-green-width: 38px;
+$arrow-right-green-height: 69px;
+$arrow-right-green-total-width: 401px;
+$arrow-right-green-total-height: 346px;
+$arrow-right-green-image: 'sprite.png';
+$arrow-right-green: (318px, 166px, -318px, -166px, 38px, 69px, 401px, 346px, 'sprite.png', 'arrow-right-green', );
+$arrow-right-name: 'arrow-right';
+$arrow-right-x: 318px;
+$arrow-right-y: 0px;
+$arrow-right-offset-x: -318px;
+$arrow-right-offset-y: 0px;
+$arrow-right-width: 45px;
+$arrow-right-height: 83px;
+$arrow-right-total-width: 401px;
+$arrow-right-total-height: 346px;
+$arrow-right-image: 'sprite.png';
+$arrow-right: (318px, 0px, -318px, 0px, 45px, 83px, 401px, 346px, 'sprite.png', 'arrow-right', );
+$business-cases-item-arrows-name: 'business-cases-item-arrows';
+$business-cases-item-arrows-x: 194px;
+$business-cases-item-arrows-y: 176px;
+$business-cases-item-arrows-offset-x: -194px;
+$business-cases-item-arrows-offset-y: -176px;
+$business-cases-item-arrows-width: 66px;
+$business-cases-item-arrows-height: 48px;
+$business-cases-item-arrows-total-width: 401px;
+$business-cases-item-arrows-total-height: 346px;
+$business-cases-item-arrows-image: 'sprite.png';
+$business-cases-item-arrows: (194px, 176px, -194px, -176px, 66px, 48px, 401px, 346px, 'sprite.png', 'business-cases-item-arrows', );
+$business-cases-item-chart-name: 'business-cases-item-chart';
+$business-cases-item-chart-x: 260px;
+$business-cases-item-chart-y: 176px;
+$business-cases-item-chart-offset-x: -260px;
+$business-cases-item-chart-offset-y: -176px;
+$business-cases-item-chart-width: 58px;
+$business-cases-item-chart-height: 46px;
+$business-cases-item-chart-total-width: 401px;
+$business-cases-item-chart-total-height: 346px;
+$business-cases-item-chart-image: 'sprite.png';
+$business-cases-item-chart: (260px, 176px, -260px, -176px, 58px, 46px, 401px, 346px, 'sprite.png', 'business-cases-item-chart', );
+$business-cases-item-communication-name: 'business-cases-item-communication';
+$business-cases-item-communication-x: 194px;
+$business-cases-item-communication-y: 124px;
+$business-cases-item-communication-offset-x: -194px;
+$business-cases-item-communication-offset-y: -124px;
+$business-cases-item-communication-width: 78px;
+$business-cases-item-communication-height: 52px;
+$business-cases-item-communication-total-width: 401px;
+$business-cases-item-communication-total-height: 346px;
+$business-cases-item-communication-image: 'sprite.png';
+$business-cases-item-communication: (194px, 124px, -194px, -124px, 78px, 52px, 401px, 346px, 'sprite.png', 'business-cases-item-communication', );
+$business-cases-item-hr-name: 'business-cases-item-hr';
+$business-cases-item-hr-x: 58px;
+$business-cases-item-hr-y: 224px;
+$business-cases-item-hr-offset-x: -58px;
+$business-cases-item-hr-offset-y: -224px;
+$business-cases-item-hr-width: 62px;
+$business-cases-item-hr-height: 58px;
+$business-cases-item-hr-total-width: 401px;
+$business-cases-item-hr-total-height: 346px;
+$business-cases-item-hr-image: 'sprite.png';
+$business-cases-item-hr: (58px, 224px, -58px, -224px, 62px, 58px, 401px, 346px, 'sprite.png', 'business-cases-item-hr', );
+$business-cases-item-logistic-name: 'business-cases-item-logistic';
+$business-cases-item-logistic-x: 179px;
+$business-cases-item-logistic-y: 224px;
+$business-cases-item-logistic-offset-x: -179px;
+$business-cases-item-logistic-offset-y: -224px;
+$business-cases-item-logistic-width: 64px;
+$business-cases-item-logistic-height: 48px;
+$business-cases-item-logistic-total-width: 401px;
+$business-cases-item-logistic-total-height: 346px;
+$business-cases-item-logistic-image: 'sprite.png';
+$business-cases-item-logistic: (179px, 224px, -179px, -224px, 64px, 48px, 401px, 346px, 'sprite.png', 'business-cases-item-logistic', );
+$business-cases-item-money-name: 'business-cases-item-money';
+$business-cases-item-money-x: 120px;
+$business-cases-item-money-y: 224px;
+$business-cases-item-money-offset-x: -120px;
+$business-cases-item-money-offset-y: -224px;
+$business-cases-item-money-width: 59px;
+$business-cases-item-money-height: 53px;
+$business-cases-item-money-total-width: 401px;
+$business-cases-item-money-total-height: 346px;
+$business-cases-item-money-image: 'sprite.png';
+$business-cases-item-money: (120px, 224px, -120px, -224px, 59px, 53px, 401px, 346px, 'sprite.png', 'business-cases-item-money', );
+$business-cases-item-rocket-name: 'business-cases-item-rocket';
+$business-cases-item-rocket-x: 0px;
+$business-cases-item-rocket-y: 290px;
+$business-cases-item-rocket-offset-x: 0px;
+$business-cases-item-rocket-offset-y: -290px;
+$business-cases-item-rocket-width: 49px;
+$business-cases-item-rocket-height: 56px;
+$business-cases-item-rocket-total-width: 401px;
+$business-cases-item-rocket-total-height: 346px;
+$business-cases-item-rocket-image: 'sprite.png';
+$business-cases-item-rocket: (0px, 290px, 0px, -290px, 49px, 56px, 401px, 346px, 'sprite.png', 'business-cases-item-rocket', );
+$business-cases-item-thinking-name: 'business-cases-item-thinking';
+$business-cases-item-thinking-x: 0px;
+$business-cases-item-thinking-y: 224px;
+$business-cases-item-thinking-offset-x: 0px;
+$business-cases-item-thinking-offset-y: -224px;
+$business-cases-item-thinking-width: 58px;
+$business-cases-item-thinking-height: 66px;
+$business-cases-item-thinking-total-width: 401px;
+$business-cases-item-thinking-total-height: 346px;
+$business-cases-item-thinking-image: 'sprite.png';
+$business-cases-item-thinking: (0px, 224px, 0px, -224px, 58px, 66px, 401px, 346px, 'sprite.png', 'business-cases-item-thinking', );
+$business-cases-item-name: 'business-cases-item';
+$business-cases-item-x: 194px;
+$business-cases-item-y: 0px;
+$business-cases-item-offset-x: -194px;
+$business-cases-item-offset-y: 0px;
+$business-cases-item-width: 124px;
+$business-cases-item-height: 124px;
+$business-cases-item-total-width: 401px;
+$business-cases-item-total-height: 346px;
+$business-cases-item-image: 'sprite.png';
+$business-cases-item: (194px, 0px, -194px, 0px, 124px, 124px, 401px, 346px, 'sprite.png', 'business-cases-item', );
+$business-cases-list-item-arrow-name: 'business-cases-list-item-arrow';
+$business-cases-list-item-arrow-x: 363px;
+$business-cases-list-item-arrow-y: 177px;
+$business-cases-list-item-arrow-offset-x: -363px;
+$business-cases-list-item-arrow-offset-y: -177px;
+$business-cases-list-item-arrow-width: 29px;
+$business-cases-list-item-arrow-height: 18px;
+$business-cases-list-item-arrow-total-width: 401px;
+$business-cases-list-item-arrow-total-height: 346px;
+$business-cases-list-item-arrow-image: 'sprite.png';
+$business-cases-list-item-arrow: (363px, 177px, -363px, -177px, 29px, 18px, 401px, 346px, 'sprite.png', 'business-cases-list-item-arrow', );
+$feedback-case-green-name: 'feedback-case-green';
+$feedback-case-green-x: 363px;
+$feedback-case-green-y: 261px;
+$feedback-case-green-offset-x: -363px;
+$feedback-case-green-offset-y: -261px;
+$feedback-case-green-width: 22px;
+$feedback-case-green-height: 19px;
+$feedback-case-green-total-width: 401px;
+$feedback-case-green-total-height: 346px;
+$feedback-case-green-image: 'sprite.png';
+$feedback-case-green: (363px, 261px, -363px, -261px, 22px, 19px, 401px, 346px, 'sprite.png', 'feedback-case-green', );
+$feedback-case-grey-name: 'feedback-case-grey';
+$feedback-case-grey-x: 363px;
+$feedback-case-grey-y: 299px;
+$feedback-case-grey-offset-x: -363px;
+$feedback-case-grey-offset-y: -299px;
+$feedback-case-grey-width: 22px;
+$feedback-case-grey-height: 19px;
+$feedback-case-grey-total-width: 401px;
+$feedback-case-grey-total-height: 346px;
+$feedback-case-grey-image: 'sprite.png';
+$feedback-case-grey: (363px, 299px, -363px, -299px, 22px, 19px, 401px, 346px, 'sprite.png', 'feedback-case-grey', );
+$feedback-case-white-name: 'feedback-case-white';
+$feedback-case-white-x: 363px;
+$feedback-case-white-y: 280px;
+$feedback-case-white-offset-x: -363px;
+$feedback-case-white-offset-y: -280px;
+$feedback-case-white-width: 22px;
+$feedback-case-white-height: 19px;
+$feedback-case-white-total-width: 401px;
+$feedback-case-white-total-height: 346px;
+$feedback-case-white-image: 'sprite.png';
+$feedback-case-white: (363px, 280px, -363px, -280px, 22px, 19px, 401px, 346px, 'sprite.png', 'feedback-case-white', );
+$feedback-coaching-green-name: 'feedback-coaching-green';
+$feedback-coaching-green-x: 363px;
+$feedback-coaching-green-y: 195px;
+$feedback-coaching-green-offset-x: -363px;
+$feedback-coaching-green-offset-y: -195px;
+$feedback-coaching-green-width: 22px;
+$feedback-coaching-green-height: 22px;
+$feedback-coaching-green-total-width: 401px;
+$feedback-coaching-green-total-height: 346px;
+$feedback-coaching-green-image: 'sprite.png';
+$feedback-coaching-green: (363px, 195px, -363px, -195px, 22px, 22px, 401px, 346px, 'sprite.png', 'feedback-coaching-green', );
+$feedback-coaching-grey-name: 'feedback-coaching-grey';
+$feedback-coaching-grey-x: 363px;
+$feedback-coaching-grey-y: 217px;
+$feedback-coaching-grey-offset-x: -363px;
+$feedback-coaching-grey-offset-y: -217px;
+$feedback-coaching-grey-width: 22px;
+$feedback-coaching-grey-height: 22px;
+$feedback-coaching-grey-total-width: 401px;
+$feedback-coaching-grey-total-height: 346px;
+$feedback-coaching-grey-image: 'sprite.png';
+$feedback-coaching-grey: (363px, 217px, -363px, -217px, 22px, 22px, 401px, 346px, 'sprite.png', 'feedback-coaching-grey', );
+$feedback-coaching-white-name: 'feedback-coaching-white';
+$feedback-coaching-white-x: 363px;
+$feedback-coaching-white-y: 239px;
+$feedback-coaching-white-offset-x: -363px;
+$feedback-coaching-white-offset-y: -239px;
+$feedback-coaching-white-width: 22px;
+$feedback-coaching-white-height: 22px;
+$feedback-coaching-white-total-width: 401px;
+$feedback-coaching-white-total-height: 346px;
+$feedback-coaching-white-image: 'sprite.png';
+$feedback-coaching-white: (363px, 239px, -363px, -239px, 22px, 22px, 401px, 346px, 'sprite.png', 'feedback-coaching-white', );
+$feedback-question-green-name: 'feedback-question-green';
+$feedback-question-green-x: 388px;
+$feedback-question-green-y: 102px;
+$feedback-question-green-offset-x: -388px;
+$feedback-question-green-offset-y: -102px;
+$feedback-question-green-width: 11px;
+$feedback-question-green-height: 17px;
+$feedback-question-green-total-width: 401px;
+$feedback-question-green-total-height: 346px;
+$feedback-question-green-image: 'sprite.png';
+$feedback-question-green: (388px, 102px, -388px, -102px, 11px, 17px, 401px, 346px, 'sprite.png', 'feedback-question-green', );
+$feedback-question-grey-name: 'feedback-question-grey';
+$feedback-question-grey-x: 388px;
+$feedback-question-grey-y: 127px;
+$feedback-question-grey-offset-x: -388px;
+$feedback-question-grey-offset-y: -127px;
+$feedback-question-grey-width: 11px;
+$feedback-question-grey-height: 17px;
+$feedback-question-grey-total-width: 401px;
+$feedback-question-grey-total-height: 346px;
+$feedback-question-grey-image: 'sprite.png';
+$feedback-question-grey: (388px, 127px, -388px, -127px, 11px, 17px, 401px, 346px, 'sprite.png', 'feedback-question-grey', );
+$feedback-question-white-name: 'feedback-question-white';
+$feedback-question-white-x: 386px;
+$feedback-question-white-y: 69px;
+$feedback-question-white-offset-x: -386px;
+$feedback-question-white-offset-y: -69px;
+$feedback-question-white-width: 11px;
+$feedback-question-white-height: 17px;
+$feedback-question-white-total-width: 401px;
+$feedback-question-white-total-height: 346px;
+$feedback-question-white-image: 'sprite.png';
+$feedback-question-white: (386px, 69px, -386px, -69px, 11px, 17px, 401px, 346px, 'sprite.png', 'feedback-question-white', );
+$feedback-training-green-name: 'feedback-training-green';
+$feedback-training-green-x: 363px;
+$feedback-training-green-y: 127px;
+$feedback-training-green-offset-x: -363px;
+$feedback-training-green-offset-y: -127px;
+$feedback-training-green-width: 25px;
+$feedback-training-green-height: 25px;
+$feedback-training-green-total-width: 401px;
+$feedback-training-green-total-height: 346px;
+$feedback-training-green-image: 'sprite.png';
+$feedback-training-green: (363px, 127px, -363px, -127px, 25px, 25px, 401px, 346px, 'sprite.png', 'feedback-training-green', );
+$feedback-training-grey-name: 'feedback-training-grey';
+$feedback-training-grey-x: 363px;
+$feedback-training-grey-y: 152px;
+$feedback-training-grey-offset-x: -363px;
+$feedback-training-grey-offset-y: -152px;
+$feedback-training-grey-width: 25px;
+$feedback-training-grey-height: 25px;
+$feedback-training-grey-total-width: 401px;
+$feedback-training-grey-total-height: 346px;
+$feedback-training-grey-image: 'sprite.png';
+$feedback-training-grey: (363px, 152px, -363px, -152px, 25px, 25px, 401px, 346px, 'sprite.png', 'feedback-training-grey', );
+$feedback-training-white-name: 'feedback-training-white';
+$feedback-training-white-x: 363px;
+$feedback-training-white-y: 102px;
+$feedback-training-white-offset-x: -363px;
+$feedback-training-white-offset-y: -102px;
+$feedback-training-white-width: 25px;
+$feedback-training-white-height: 25px;
+$feedback-training-white-total-width: 401px;
+$feedback-training-white-total-height: 346px;
+$feedback-training-white-image: 'sprite.png';
+$feedback-training-white: (363px, 102px, -363px, -102px, 25px, 25px, 401px, 346px, 'sprite.png', 'feedback-training-white', );
+$rabotavamrest-logo-name: 'rabotavamrest-logo';
+$rabotavamrest-logo-x: 363px;
+$rabotavamrest-logo-y: 69px;
+$rabotavamrest-logo-offset-x: -363px;
+$rabotavamrest-logo-offset-y: -69px;
+$rabotavamrest-logo-width: 23px;
+$rabotavamrest-logo-height: 33px;
+$rabotavamrest-logo-total-width: 401px;
+$rabotavamrest-logo-total-height: 346px;
+$rabotavamrest-logo-image: 'sprite.png';
+$rabotavamrest-logo: (363px, 69px, -363px, -69px, 23px, 33px, 401px, 346px, 'sprite.png', 'rabotavamrest-logo', );
+$trainings-date-bg-name: 'trainings-date-bg';
+$trainings-date-bg-x: 0px;
+$trainings-date-bg-y: 0px;
+$trainings-date-bg-offset-x: 0px;
+$trainings-date-bg-offset-y: 0px;
+$trainings-date-bg-width: 194px;
+$trainings-date-bg-height: 224px;
+$trainings-date-bg-total-width: 401px;
+$trainings-date-bg-total-height: 346px;
+$trainings-date-bg-image: 'sprite.png';
+$trainings-date-bg: (0px, 0px, 0px, 0px, 194px, 224px, 401px, 346px, 'sprite.png', 'trainings-date-bg', );
+$spritesheet-width: 401px;
+$spritesheet-height: 346px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($about-before-bg, $arrow-left-green, $arrow-left, $arrow-right-green, $arrow-right, $business-cases-item-arrows, $business-cases-item-chart, $business-cases-item-communication, $business-cases-item-hr, $business-cases-item-logistic, $business-cases-item-money, $business-cases-item-rocket, $business-cases-item-thinking, $business-cases-item, $business-cases-list-item-arrow, $feedback-case-green, $feedback-case-grey, $feedback-case-white, $feedback-coaching-green, $feedback-coaching-grey, $feedback-coaching-white, $feedback-question-green, $feedback-question-grey, $feedback-question-white, $feedback-training-green, $feedback-training-grey, $feedback-training-white, $rabotavamrest-logo, $trainings-date-bg, );
+$spritesheet: (401px, 346px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

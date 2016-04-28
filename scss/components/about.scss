@@ -1,0 +1,50 @@
+/*about*/
+.about{
+
+	.container{
+		padding: 50px 0 0;
+		text-align: center;
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin: 0 0 0 -20px;
+			@include sprite($about-before-bg);
+		}
+	}
+
+	.more-link{
+		float: right;
+		margin: 0 80px 0 0;
+	}
+
+	h2{
+		margin: 0 300px 35px;
+	}
+
+	h3{
+		margin: 0 0 25px;
+	}
+
+	p{
+		margin: 0 80px 65px;
+		font-family: Roboto-Regular, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 36px;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: left;
+
+		b{
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-weight: 400;
+		}
+	}
+}
+/*end of about*/

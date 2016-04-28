@@ -1,0 +1,112 @@
+/*texts*/
+.section{
+
+	&-title{
+		font-family: Roboto-Bold, Helvetica, sans-serif;
+		font-size: 36px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+		
+		&--blue{
+			color: #283e77;
+		}
+	}
+
+	&-subtitle{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 20px;
+		background: #4cb050;
+		font-family: Roboto-Regular, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 36px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+}
+
+.more-link{
+	margin: 0;
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	min-height: 48px;
+	width: 205px;
+	font-family: Roboto-Bold, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 48px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0;
+	text-align: center;
+	
+	&--green{
+		border-color: #4cb050;
+		color: #4cb050;
+	}
+}
+
+.button{
+	margin: 0;
+	width: 205px;
+	display: inline-block;
+	vertical-align: top;
+	background: #4cb050;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: Roboto-Bold, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 48px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0;
+	text-align: center;
+
+	&:hover,
+	&:focus{
+		padding: 0;
+	}
+}
+
+.rabotavamrest-link{
+	margin: 0;
+	padding: 0 20px 0 50px;
+	display: inline-block;
+	vertical-align: top;
+	background: #3074a1;
+	border-radius: 3px;
+	font-family: Roboto-Regular, Helvetica, sans-serif;
+	font-size: 21px;
+	line-height: 45px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+	text-align: left;
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		top: 7px;
+		left: 12px;
+		@include sprite($rabotavamrest-logo);
+	}
+}
+/*end of texts*/

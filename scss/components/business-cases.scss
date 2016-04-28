@@ -1,0 +1,167 @@
+/*business-cases*/
+.business-cases{
+
+	.container{
+		padding: 40px 0 0;
+		background: #f5f5f5;
+		text-align: center;
+	}
+
+	h2{
+		margin: 0 0 25px;
+	}
+
+	h3{
+		margin: 0 0 55px;
+	}
+
+	&__list{
+		margin: 0 80px;
+		font-size: 0;
+		text-align: left;
+
+		&-item{
+			padding: 0 0 50px 160px;
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			width: 48%;
+			position: relative;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-radius: 62px;
+				box-shadow: 0 1px 7px 0 rgba(0,0,0,.24);
+				@include sprite($business-cases-item);
+			}
+
+			&:nth-child(2n){
+				margin: 0 0 0 4%;
+			}
+
+			h4{
+				margin: 0 0 25px;
+				font-family: Roboto-Bold, Helvetica, sans-serif;
+				font-size: 21px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #4cb050;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			p{
+				margin: 0;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.5em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			a{
+				margin: 0;
+				display: block;
+				float: right;
+				line-height: 0;
+				@include sprite($business-cases-list-item-arrow);
+			}
+
+			&--rocket{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 30px;
+					left: 38px;
+					@include sprite($business-cases-item-rocket);
+				}
+			}
+
+			&--communication{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 35px;
+					left: 24px;
+					@include sprite($business-cases-item-communication);
+				}
+			}
+
+			&--hr{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 30px;
+					left: 32px;
+					@include sprite($business-cases-item-hr);
+				}
+			}
+
+			&--logistic{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 39px;
+					left: 35px;
+					@include sprite($business-cases-item-logistic);
+				}
+			}
+
+			&--arrows{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 38px;
+					left: 31px;
+					@include sprite($business-cases-item-arrows);
+				}
+			}
+
+			&--money{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 36px;
+					left: 33px;
+					@include sprite($business-cases-item-money);
+				}
+			}
+
+			&--chart{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 38px;
+					left: 34px;
+					@include sprite($business-cases-item-chart);
+				}
+			}
+
+			&--thinking{
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 28px;
+					left: 31px;
+					@include sprite($business-cases-item-thinking);
+				}
+			}
+		}
+	}
+}
+/*end of business-cases*/

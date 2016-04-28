@@ -1,0 +1,70 @@
+/*header*/
+.header{
+	display: block;
+
+	.container{
+		background: #212e50;
+		font-size: 0;
+	}
+
+	&__application{
+		margin: 15px 30px 0 0;
+		float: right;
+		
+		a{
+			padding: 0 10px;
+			display: block;
+			background: #4cb050;
+			border-radius: 15px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 30px;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+
+	.logo{
+		margin: 0;
+		display: block;
+		float: left;
+	}
+
+	&__nav{
+		margin: 0 190px 0 260px;
+		padding: 20px 0 0;
+		display: block;
+
+		ul{
+			margin: 0;
+			display: flex;
+			justify-content: space-around;
+			white-space: nowrap;
+
+			li{
+				margin: 0;
+				//display: inline-block;
+				//vertical-align: top;
+				//width: 16.66%;
+
+				a{
+					margin: 0;
+					display: block;
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 18px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+/*end of header*/

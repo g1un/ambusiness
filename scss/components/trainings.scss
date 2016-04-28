@@ -1,0 +1,94 @@
+/*trainings*/
+.trainings{
+
+	.container{
+		padding: 50px 0 155px;
+		background: url("images/trainings-bg-2.png") no-repeat center bottom/100% 165px,
+								url("images/trainings-bg-3.jpg") repeat-x center bottom,
+								url("images/trainings-bg-1.jpg") repeat-x center top,
+								#2d4a86;
+		text-align: center;
+		position: relative;
+	}
+
+	.more-link{
+		float: right;
+		margin: 0 80px 0 0;
+	}
+
+	h2{
+		margin: 0 300px 35px;
+	}
+
+	h3{
+		margin: 0 0 60px;
+	}
+
+	h4{
+		margin: 0 200px 60px 340px;
+		font-family: Roboto-Bold, Helvetica, sans-serif;
+		font-size: 24px;
+		line-height: 1.5em;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: left;
+	}
+
+	&__date{
+		position: absolute;
+		top: 120px;
+		left: 90px;
+		text-align: center;
+		@include sprite($trainings-date-bg);
+
+		b{
+			margin: 45px 0 0;
+			display: block;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 72px;
+			line-height: 1em;
+			font-weight: 400;
+			color: #4cb050;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		i{
+			margin: 0 0 15px;
+			display: block;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 24px;
+			line-height: 1em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			font-style: normal;
+		}
+
+		span{
+			margin: 0;
+			display: inline-block;
+			vertical-align: top;
+			width: 85px;
+			background: #fff;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 27px;
+			font-weight: 400;
+			color: #2f7d32;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+	}
+}
+/*end of trainings*/

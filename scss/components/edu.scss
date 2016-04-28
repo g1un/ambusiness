@@ -1,0 +1,130 @@
+/*edu*/
+.edu{
+
+	.container{
+		padding: 35px 0 55px;
+		background: url("images/edu-bg-1.jpg") repeat center top;
+	}
+
+	h2{
+		margin: 0 0 50px;
+	}
+
+	&__nav{
+		margin: 0 80px 30px;
+		font-size: 0;
+
+		li{
+			margin: 0 15px 0 0;
+			display: inline-block;
+			vertical-align: top;
+			min-width: 160px;
+			background: #fff;
+			border-radius: 3px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 50px;
+			font-weight: 400;
+			color: #ccc;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			cursor: pointer;
+
+			&:hover,
+			&:focus,
+			&.active{
+				background: #212e50;
+				color: #fff;
+			}
+		}
+	}
+
+	&__arrow-right{
+		right: 0;
+		margin: -35px 0 0;
+		@include sprite($arrow-right-green);
+	}
+
+	&__arrow-left{
+		left: 0;
+		margin: -35px 0 0;
+		@include sprite($arrow-left-green);
+	}
+
+
+	&__slider{
+		margin: 0 20px;
+		padding: 0 60px;
+		position: relative;
+
+		ul{
+			font-size: 0;
+
+			li{
+				padding: 40px 40px 60px;
+				display: inline-block;
+				vertical-align: top;
+				background: #4cb050;
+				line-height: 0;
+
+				img{
+					margin: 0;
+					display: block;
+					float: left;
+					max-width: 106px;
+				}
+
+				.more-link{
+					margin: 0;
+					display: block;
+					float: right;
+				}
+
+				span{
+					display: block;
+					margin: 0 0 25px 155px;
+					font-family: Roboto-Regular, Helvetica, sans-serif;
+					font-size: 18px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				h4{
+					display: block;
+					margin: 0 0 30px 155px;
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 30px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #212e50;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				p{
+					display: block;
+					margin: 0 0 0 155px;
+					font-family: Roboto-Regular, Helvetica, sans-serif;
+					font-size: 18px;
+					line-height: 1.5em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+/*end of edu*/

@@ -1,0 +1,167 @@
+/*feedback*/
+.feedback{
+
+	.container{
+		padding: 75px 0 80px;
+		background: url("images/feedback-bg-1.jpg") repeat-x center top;
+	}
+
+	h2{
+		margin: 0 0 60px;
+	}
+
+	&__form{
+		margin: 0 120px;
+		font-size: 0;
+
+		span{
+			margin: 0 30px 0 0;
+			display: inline-block;
+			vertical-align: middle;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		.jq-select{
+			margin: 0 30px 0 0;
+			display: inline-block;
+			vertical-align: middle;
+
+			.jq-selectbox__select{
+				padding: 5px;
+				height: 50px;
+				box-sizing: border-box;
+			}
+
+			.jq-selectbox__select-text{
+				padding: 10px 20px 10px 60px;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 10px;
+					left: 15px;
+				}
+
+				&.li-0{
+
+					&::before {
+						@include sprite($feedback-training-green);
+					}
+				}
+
+				&.li-1{
+
+					&::before{
+						@include sprite($feedback-coaching-green);
+					}
+				}
+
+				&.li-2{
+
+					&::before{
+						@include sprite($feedback-case-green);
+					}
+				}
+
+				&.li-3{
+
+					&::before{
+						left: 20px;
+						@include sprite($feedback-question-green);
+					}
+				}
+			}
+
+			li{
+				padding: 10px 10px 10px 60px;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 10px;
+					left: 15px;
+				}
+
+				&:first-child,
+				&.li-0{
+
+					&::before{
+						@include sprite($feedback-training-grey);
+					}
+
+					&:hover,
+					&.selected{
+
+						&::before{
+							@include sprite($feedback-training-white);
+						}
+					}
+				}
+
+				&:nth-child(2),
+				&.li-1{
+
+					&::before{
+						@include sprite($feedback-coaching-grey);
+					}
+
+					&:hover,
+					&.selected{
+
+						&::before{
+							@include sprite($feedback-coaching-white);
+						}
+					}
+				}
+
+				&:nth-child(3),
+				&.li-2{
+
+					&::before{
+						@include sprite($feedback-case-grey);
+					}
+
+					&:hover,
+					&.selected{
+
+						&::before{
+							@include sprite($feedback-case-white);
+						}
+					}
+				}
+
+				&:last-child,
+				&.li-3{
+
+					&::before{
+						left: 20px;
+						@include sprite($feedback-question-grey);
+					}
+
+					&:hover,
+					&.selected{
+
+						&::before{
+							@include sprite($feedback-question-white);
+						}
+					}
+				}
+			}
+		}
+
+		.button{
+			vertical-align: middle;
+		}
+	}
+}
+/*end of feedback*/
