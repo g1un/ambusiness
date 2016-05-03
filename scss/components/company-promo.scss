@@ -1,0 +1,86 @@
+/*company-promo*/
+.company-promo{
+
+	.container{
+		margin: 0 auto 40px;
+		padding: 0 0 0 80px;
+		box-sizing: border-box;
+	}
+
+	&__text{
+		display: table-cell;
+		padding: 85px 25px 0 0;
+		width: 26%;
+		box-sizing: border-box;
+
+		h2{
+			margin: 0 0 45px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 48px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #363636;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		p{
+			margin: 0 0 20px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #616161;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+
+			a{
+				color: #616161;
+			}
+		}
+	}
+
+	&__photo{
+		margin: 0;
+		display: table-cell;
+		vertical-align: bottom;
+		width: 74%;
+		box-sizing: border-box;
+		background: url("images/company-promo__photo-1.jpg") no-repeat center top;
+
+		ul{
+			padding: 20px 0;
+			font-size: 0;
+			background: rgba(40,62,119,.47);
+
+			li{
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.5em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+
+				b{
+					margin: 0;
+					display: block;
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 72px;
+					line-height: 1em;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+/*end of company-promo*/

@@ -5,6 +5,7 @@
 	.container{
 		background: #212e50;
 		font-size: 0;
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
 	}
 
 	&__application{
@@ -24,6 +25,11 @@
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
+
+			&:hover,
+			&:focus{
+				background: #2e7d32;
+			}
 		}
 	}
 
@@ -62,6 +68,29 @@
 					text-decoration: none;
 					letter-spacing: 0;
 					text-align: center;
+				}
+			}
+		}
+	}
+
+	&--blue{
+
+		.container{
+			background: #519dcf;
+		}
+
+		.header{
+
+			&__nav{
+
+				ul{
+
+					li{
+
+						a{
+							color: #212e50;
+						}
+					}
 				}
 			}
 		}

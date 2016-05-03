@@ -1,0 +1,572 @@
+/*company-about*/
+.company-about{
+
+	&__nav{
+		margin: 0 0 70px;
+
+		ul{
+			margin: 0 80px;
+			font-size: 0;
+
+			li{
+				margin: 0 15px 0 0;
+				display: inline-block;
+				vertical-align: top;
+				min-width: 160px;
+				background: #fff;
+				border: 2px solid #ccc;
+				box-sizing: border-box;
+				border-radius: 3px;
+				font-family: Roboto-Bold, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 46px;
+				font-weight: 400;
+				color: #ccc;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+				cursor: pointer;
+
+				&:hover,
+				&:focus,
+				&.active{
+					line-height: 46px;
+					border-color: #212e50;
+					background: #212e50;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__school{
+		line-height: 0;
+		text-align: center;
+	}
+
+	&__honeycomb{
+		padding: 40px 0 50px;
+
+		h2{
+			margin: 0 0 45px;
+		}
+
+		&-list{
+			position: relative;
+
+			li{
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 120px;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+
+				&:first-child{
+					margin: 0 0 0 -15px;
+					top: 44px;
+				}
+
+				&:nth-child(2){
+					margin: 0 0 0 -105px;
+					top: 208px;
+				}
+
+				&:nth-child(3){
+					margin: 0 0 0 -192px;
+					top: 365px;
+				}
+
+				&:last-child{
+					margin: 0 0 0 -17px;
+					top: 376px;
+				}
+			}
+		}
+
+		&-text{
+			margin: 0 auto;
+			max-width: 1245px;
+			position: relative;
+
+			li{
+				position: absolute;
+				top: 0;
+				left: 50%;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: left;
+
+				&:first-child{
+					top: 60px;
+					margin: 0 0 0 140px;
+				}
+
+				&:nth-child(2){
+					top: 215px;
+
+					p{
+						position: absolute;
+						top: 0;
+						right: 145px;
+						margin: 0 0 0 -610px;
+					}
+				}
+
+				&:last-child{
+					top: 360px;
+					margin: 0 0 0 140px;
+				}
+			}
+		}
+
+		&-img{
+			margin: 0 0 40px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		p{
+			margin: 0 80px 20px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+	}
+
+	&__case{
+		padding: 40px 0 50px;
+
+		h2{
+			margin: 0 0 45px;
+		}
+
+		&-features{
+			margin: 0 0 20px;
+			font-size: 0;
+
+			li{
+
+				.img{
+					display: table-cell;
+					vertical-align: top;
+					width: 310px;
+
+					img{
+						max-width: 100%;
+					}
+				}
+
+				p{
+					padding: 0 45px;
+					box-sizing: border-box;
+					display: table-cell;
+					vertical-align: middle;
+					font-family: Roboto-Regular, Helvetica, sans-serif;
+					font-size: 18px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				&:first-child{
+					background: #212e50;
+				}
+				
+				&:nth-child(2){
+					background: #519dcf;
+				}
+
+				&:last-child{
+					background: url("images/edu-bg-1.jpg") repeat 0 0;
+					
+					p{
+						color: #212e50;
+					}
+				}
+			}
+		}
+
+		&-arrow{
+			margin: 0 auto;
+			padding: 100px 0 0;
+			box-sizing: border-box;
+			min-height: 334px;
+			background: url("images/company-about__case-arrow.png") no-repeat center top;
+			font-size: 0;
+			text-align: center;
+
+			li{
+				margin: 0 8px 0 0;
+				padding: 35px 20px 0;
+				box-sizing: border-box;
+				width: 185px;
+				min-height: 135px;
+				display: inline-block;
+				vertical-align: top;
+				background: #5b9bd5;
+				border-radius: 22px;
+				border: 1px solid #fff;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+
+				span{
+					display: block;
+					font-size: 11px;
+					line-height: 1.2em;
+				}
+			}
+		}
+	}
+
+	&__students{
+		margin: 0;
+		padding: 40px 80px;
+		background: /*#c0dcee*/ url("images/woman.png") no-repeat right top/ auto 100%;
+
+		h3{
+			margin: 0 0 65px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 42px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #519dcf;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		p{
+			margin: 0 0 65px;
+			padding: 0 0 0 55px;
+			max-width: 70%;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 24px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #212e50;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+			position: relative;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 10px;
+				left: 0;
+				@include sprite($check);
+			}
+			
+			a{
+				color: #212e50;
+			}
+		}
+	}
+
+	&__themes{
+		margin: 0;
+		padding: 60px 80px 50px;
+		background: #4cb050 url("images/company-about__themes-bg-1.jpg") repeat-x center 10%/100% auto;
+
+		h2{
+			margin: 0 0 10px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 42px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		p{
+			margin: 0 0 45px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		ul{
+
+			li{
+				margin: 0 0 35px;
+				padding: 0 0 0 40px;
+				font-family: Roboto-Bold, Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: left;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 5px;
+					left: 0;
+					@include sprite($check-white);
+				}
+
+				&:last-child{
+					padding: 0;
+
+					&::before{
+						display: none;
+					}
+				}
+				
+				a{
+					display: block;
+					color: #fff;
+				}
+			}
+		}
+
+		b{
+			margin: 0 0 40px;
+			display: block;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 48px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+	}
+
+	&__experts{
+		padding: 40px 0 55px;
+		text-align: center;
+
+		h2{
+			margin: 0 0 70px;
+		}
+
+		&-slider{
+			margin: 0 0 60px;
+			padding: 0 80px;
+			position: relative;
+
+			ul{
+				//margin: 0 80px;
+				font-size: 0;
+				text-align: left;
+
+				li{
+					margin: 0 .05% 0;
+					//padding: 20px 15px 15px;
+					//box-sizing: border-box;
+					background: url("images/company-about__experts-slider-item.png") repeat 0 0;
+					display: inline-block;
+					vertical-align: top;
+					width: 100%;
+					min-height: 460px;
+					text-align: left;
+
+					.img{
+						margin: 20px auto 20px;
+						padding: 8px;
+						box-sizing: border-box;
+						box-shadow: 0 1px 7px 0 rgba(0,0,0,.24);
+						width: 184px;
+						height: 184px;
+						border-radius: 50%;
+						background: #fff;
+						overflow: hidden;
+						line-height: 0;
+
+						img{
+							max-width: 100%;
+							border-radius: 50%;
+						}
+					}
+
+					h4{
+						margin: 0 15px 10px;
+						font-family: Roboto-Bold, Helvetica, sans-serif;
+						font-size: 18px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #363636;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: left;
+					}
+
+					span{
+						margin: 0 15px 20px;
+						display: block;
+						font-family: OpenSans-Light, Helvetica, sans-serif;
+						font-size: 14px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #b2b2b2;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: left;
+					}
+
+					p{
+						margin: 0 15px 15px;
+						font-family: OpenSans-Light, Helvetica, sans-serif;
+						font-size: 14px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #464646;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: left;
+
+						&.hidden{
+							display: none;
+						}
+					}
+
+					b{
+						margin: 0 15px 15px;
+						display: inline-block;
+						font-family: OpenSans-Semibold, Helvetica, sans-serif;
+						font-size: 14px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #519dcf;
+						text-transform: none;
+						text-decoration: underline;
+						letter-spacing: 0;
+						text-align: left;
+						cursor: pointer;
+					}
+
+					i{
+						margin: 0 15px 15px;
+						display: none;
+						font-family: OpenSans-Semibold, Helvetica, sans-serif;
+						font-size: 14px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #959595;
+						text-transform: none;
+						text-decoration: underline;
+						letter-spacing: 0;
+						text-align: left;
+						cursor: pointer;
+						font-style: normal;
+
+						&.show{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		&-arrow-left{
+			position: absolute;
+			top: 0;
+			left: -79px;
+			height: 100%;
+			width: 78px;
+			cursor: pointer;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -27px 0 0 -15px;
+				@include sprite($company-about-experts-arrow-left);
+			}
+
+			&:hover,
+			&:focus{
+				background: #eaf3f9;
+
+				&::before{
+					@include sprite($company-about-experts-arrow-right-hover);
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		&-arrow-right{
+			position: absolute;
+			top: 0;
+			right: -79px;
+			height: 100%;
+			width: 78px;
+			cursor: pointer;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 50%;
+				margin: -27px -15px 0 0;
+				@include sprite($company-about-experts-arrow-left);
+				transform: rotate(180deg);
+			}
+
+			&:hover,
+			&:focus{
+				background: #eaf3f9;
+
+				&::before{
+					@include sprite($company-about-experts-arrow-right-hover);
+					transform: none;
+				}
+			}
+		}
+	}
+}
+/*end of company-about*/

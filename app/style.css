@@ -13,6 +13,8 @@ html, body, p, h1, h2, h3, h4, ul { list-style: none; margin: 0; padding: 0; }
 
 @font-face { font-family: OpenSans-Light; src: url(fonts/OpenSans-Light.ttf); font-weight: normal; }
 
+@font-face { font-family: OpenSans-Semibold; src: url(fonts/OpenSans-Semibold.ttf); font-weight: normal; }
+
 /*end of fonts*/
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -70,13 +72,17 @@ The `sprites` mixin generates identical output to the CSS template
 
 .more-link--green { border-color: #4cb050; color: #4cb050; }
 
-.button { margin: 0; width: 205px; display: inline-block; vertical-align: top; background: #4cb050; border-radius: 3px; border: none; outline: none; cursor: pointer; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 16px; line-height: 48px; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; }
+.button { margin: 0; width: 205px; display: inline-block; vertical-align: top; background: #4cb050; border-radius: 3px; border: none; outline: none; cursor: pointer; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 16px; line-height: 48px; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; -webkit-transition: background-color .25s; transition: background-color .25s; }
 
-.button:hover, .button:focus { padding: 0; }
+.button:hover, .button:focus { padding: 0; background: #2e7d32; }
+
+.button--white { background: #fff; color: #4cb050; }
+
+.button--white:hover, .button--white:focus { padding: 0; background: #fff; }
 
 .rabotavamrest-link { margin: 0; padding: 0 20px 0 50px; display: inline-block; vertical-align: top; background: #3074a1; border-radius: 3px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 21px; line-height: 45px; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
 
-.rabotavamrest-link::before { content: ''; position: absolute; top: 7px; left: 12px; background-image: url(images/sprite.png); background-position: -363px -69px; width: 23px; height: 33px; }
+.rabotavamrest-link::before { content: ''; position: absolute; top: 7px; left: 12px; background-image: url(images/sprite.png); background-position: -363px -179px; width: 23px; height: 33px; }
 
 /*end of texts*/
 /*arrow*/
@@ -100,11 +106,13 @@ The `sprites` mixin generates identical output to the CSS template
 /*header*/
 .header { display: block; }
 
-.header .container { background: #212e50; font-size: 0; }
+.header .container { background: #212e50; font-size: 0; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); }
 
 .header__application { margin: 15px 30px 0 0; float: right; }
 
 .header__application a { padding: 0 10px; display: block; background: #4cb050; border-radius: 15px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 14px; line-height: 30px; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; }
+
+.header__application a:hover, .header__application a:focus { background: #2e7d32; }
 
 .header .logo { margin: 0; display: block; float: left; }
 
@@ -116,11 +124,15 @@ The `sprites` mixin generates identical output to the CSS template
 
 .header__nav ul li a { margin: 0; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; }
 
+.header--blue .container { background: #519dcf; }
+
+.header--blue .header__nav ul li a { color: #212e50; }
+
 /*end of header*/
 /*logo*/
-.logo { padding: 16px 0; width: 260px; background: #fff; line-height: 0; }
+.logo { width: 260px; background: #fff; line-height: 0; }
 
-.logo img { margin: 0 0 0 80px; padding: 0; display: block; }
+.logo img { padding: 0; display: block; max-width: 100%; }
 
 /*end of logo*/
 /*promo*/
@@ -156,7 +168,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .about h3 { margin: 0 0 25px; }
 
-.about p { margin: 0 80px 65px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 36px; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.about p { margin: 0 80px 65px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
 .about p b { font-family: Roboto-Bold, Helvetica, sans-serif; font-weight: 400; }
 
@@ -166,21 +178,23 @@ The `sprites` mixin generates identical output to the CSS template
 
 .professionals h3 { margin: 0 0 30px; }
 
-.professionals__arrow-right { right: 0; background-image: url(images/sprite.png); background-position: -318px 0px; width: 45px; height: 83px; }
+.professionals__arrow-right { right: 0; background-image: url(images/sprite.png); background-position: -318px -83px; width: 45px; height: 83px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.professionals__arrow-right:hover, .professionals__arrow-right:focus { background-image: url(images/sprite.png); background-position: -318px 0px; width: 45px; height: 83px; -webkit-transform: none; transform: none; }
 
 .professionals__arrow-left { left: 0; background-image: url(images/sprite.png); background-position: -318px -83px; width: 45px; height: 83px; }
+
+.professionals__arrow-left:hover, .professionals__arrow-left:focus { background-image: url(images/sprite.png); background-position: -318px 0px; width: 45px; height: 83px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .professionals__slider { margin: 0 80px; padding: 0 90px; position: relative; }
 
 .professionals__slider ul { font-size: 0; }
 
-.professionals__slider ul li { padding: 35px 30px; display: inline-block; vertical-align: top; background: #29448a url("images/professionals-slider-item-bg.png") no-repeat 98% 30px; line-height: 0; }
+.professionals__slider ul li { padding: 35px 30px; box-sizing: border-box; display: inline-block; vertical-align: top; background: #29448a url("images/professionals-slider-item-bg.png") no-repeat 98% 30px; line-height: 0; }
 
-.professionals__slider ul li .img { display: table-cell; width: 200px; vertical-align: middle; }
+.professionals__slider ul li img { margin: 0; display: block; float: left; width: 162px; height: 162px; border-radius: 50%; overflow: hidden; }
 
-.professionals__slider ul li img { margin: 0; display: block; width: 162px; height: 162px; border-radius: 50%; overflow: hidden; }
-
-.professionals__slider ul li .text { padding: 0 0 0 30px; display: table-cell; width: 100%; }
+.professionals__slider ul li .text { margin: 0 0 0 162px; padding: 0 0 0 30px; }
 
 .professionals__slider ul li h4 { display: block; margin: 0 0 15px 0; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 30px; line-height: 36px; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
@@ -208,7 +222,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .business-cases__list-item p { margin: 0; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; }
 
-.business-cases__list-item a { margin: 0; display: block; float: right; line-height: 0; background-image: url(images/sprite.png); background-position: -363px -177px; width: 29px; height: 18px; }
+.business-cases__list-item a { margin: 0; display: block; float: right; line-height: 0; background-image: url(images/sprite.png); background-position: -363px -287px; width: 29px; height: 18px; }
 
 .business-cases__list-item--rocket::after { content: ''; position: absolute; top: 30px; left: 38px; background-image: url(images/sprite.png); background-position: 0px -290px; width: 49px; height: 56px; }
 
@@ -258,9 +272,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .edu__nav li:hover, .edu__nav li:focus, .edu__nav li.active { background: #212e50; color: #fff; }
 
-.edu__arrow-right { right: 0; margin: -35px 0 0; background-image: url(images/sprite.png); background-position: -318px -166px; width: 38px; height: 69px; }
+.edu__arrow-right { right: 0; margin: -35px 0 0; background-image: url(images/sprite.png); background-position: -363px 0px; width: 38px; height: 69px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.edu__arrow-right:hover, .edu__arrow-right:focus { background-image: url(images/sprite.png); background-position: -318px -166px; width: 38px; height: 69px; -webkit-transform: none; transform: none; }
 
 .edu__arrow-left { left: 0; margin: -35px 0 0; background-image: url(images/sprite.png); background-position: -363px 0px; width: 38px; height: 69px; }
+
+.edu__arrow-left:hover, .edu__arrow-left:focus { background-image: url(images/sprite.png); background-position: -318px -166px; width: 38px; height: 69px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .edu__slider { margin: 0 20px; padding: 0 60px; position: relative; }
 
@@ -310,39 +328,47 @@ The `sprites` mixin generates identical output to the CSS template
 
 .feedback__form .jq-select { margin: 0 30px 0 0; display: inline-block; vertical-align: middle; }
 
-.feedback__form .jq-select .jq-selectbox__select { padding: 5px; height: 50px; box-sizing: border-box; }
+.feedback__form .jq-select .jq-selectbox.opened .jq-selectbox__select { border-color: transparent; }
 
-.feedback__form .jq-select .jq-selectbox__select-text { padding: 10px 20px 10px 60px; position: relative; }
+.feedback__form .jq-select .jq-selectbox.opened .jq-selectbox__trigger-arrow { -webkit-transform: rotate(135deg); transform: rotate(135deg); top: 20px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text::before { content: ''; position: absolute; top: 10px; left: 15px; }
+.feedback__form .jq-select .jq-selectbox__select { padding: 5px; height: 50px; border: 2px solid #4fc754; box-sizing: border-box; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-0::before { background-image: url(images/sprite.png); background-position: -363px -127px; width: 25px; height: 25px; }
+.feedback__form .jq-select .jq-selectbox__select-text { padding: 8px 50px 10px 54px; box-sizing: border-box; position: relative; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-1::before { background-image: url(images/sprite.png); background-position: -363px -195px; width: 22px; height: 22px; }
+.feedback__form .jq-select .jq-selectbox__select-text::before { content: ''; position: absolute; top: 8px; left: 8px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-2::before { background-image: url(images/sprite.png); background-position: -363px -261px; width: 22px; height: 19px; }
+.feedback__form .jq-select .jq-selectbox__select-text.li-0::before { background-image: url(images/sprite.png); background-position: -363px -212px; width: 25px; height: 25px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-3::before { left: 20px; background-image: url(images/sprite.png); background-position: -388px -102px; width: 11px; height: 17px; }
+.feedback__form .jq-select .jq-selectbox__select-text.li-1::before { background-image: url(images/sprite.png); background-position: -340px -257px; width: 22px; height: 22px; }
+
+.feedback__form .jq-select .jq-selectbox__select-text.li-2::before { background-image: url(images/sprite.png); background-position: -294px -124px; width: 22px; height: 19px; }
+
+.feedback__form .jq-select .jq-selectbox__select-text.li-3::before { left: 13px; background-image: url(images/sprite.png); background-position: -388px -237px; width: 11px; height: 17px; }
 
 .feedback__form .jq-select li { padding: 10px 10px 10px 60px; position: relative; }
 
 .feedback__form .jq-select li::before { content: ''; position: absolute; top: 10px; left: 15px; }
 
-.feedback__form .jq-select li:first-child::before, .feedback__form .jq-select li.li-0::before { background-image: url(images/sprite.png); background-position: -363px -152px; width: 25px; height: 25px; }
+.feedback__form .jq-select li:first-child::before, .feedback__form .jq-select li.li-0::before { background-image: url(images/sprite.png); background-position: -363px -237px; width: 25px; height: 25px; }
 
-.feedback__form .jq-select li:first-child:hover::before, .feedback__form .jq-select li:first-child.selected::before, .feedback__form .jq-select li.li-0:hover::before, .feedback__form .jq-select li.li-0.selected::before { background-image: url(images/sprite.png); background-position: -363px -102px; width: 25px; height: 25px; }
+.feedback__form .jq-select li:first-child:hover::before, .feedback__form .jq-select li:first-child.selected::before, .feedback__form .jq-select li.li-0:hover::before, .feedback__form .jq-select li.li-0.selected::before { background-image: url(images/sprite.png); background-position: -363px -262px; width: 25px; height: 25px; }
 
-.feedback__form .jq-select li:nth-child(2)::before, .feedback__form .jq-select li.li-1::before { background-image: url(images/sprite.png); background-position: -363px -217px; width: 22px; height: 22px; }
+.feedback__form .jq-select li:nth-child(2)::before, .feedback__form .jq-select li.li-1::before { background-image: url(images/sprite.png); background-position: -318px -257px; width: 22px; height: 22px; }
 
-.feedback__form .jq-select li:nth-child(2):hover::before, .feedback__form .jq-select li:nth-child(2).selected::before, .feedback__form .jq-select li.li-1:hover::before, .feedback__form .jq-select li.li-1.selected::before { background-image: url(images/sprite.png); background-position: -363px -239px; width: 22px; height: 22px; }
+.feedback__form .jq-select li:nth-child(2):hover::before, .feedback__form .jq-select li:nth-child(2).selected::before, .feedback__form .jq-select li.li-1:hover::before, .feedback__form .jq-select li.li-1.selected::before { background-image: url(images/sprite.png); background-position: -363px -305px; width: 22px; height: 22px; }
 
-.feedback__form .jq-select li:nth-child(3)::before, .feedback__form .jq-select li.li-2::before { background-image: url(images/sprite.png); background-position: -363px -299px; width: 22px; height: 19px; }
+.feedback__form .jq-select li:nth-child(3)::before, .feedback__form .jq-select li.li-2::before { background-image: url(images/sprite.png); background-position: -272px -124px; width: 22px; height: 19px; }
 
-.feedback__form .jq-select li:nth-child(3):hover::before, .feedback__form .jq-select li:nth-child(3).selected::before, .feedback__form .jq-select li.li-2:hover::before, .feedback__form .jq-select li.li-2.selected::before { background-image: url(images/sprite.png); background-position: -363px -280px; width: 22px; height: 19px; }
+.feedback__form .jq-select li:nth-child(3):hover::before, .feedback__form .jq-select li:nth-child(3).selected::before, .feedback__form .jq-select li.li-2:hover::before, .feedback__form .jq-select li.li-2.selected::before { background-image: url(images/sprite.png); background-position: -363px -327px; width: 22px; height: 19px; }
 
-.feedback__form .jq-select li:last-child::before, .feedback__form .jq-select li.li-3::before { left: 20px; background-image: url(images/sprite.png); background-position: -388px -127px; width: 11px; height: 17px; }
+.feedback__form .jq-select li:last-child::before, .feedback__form .jq-select li.li-3::before { left: 20px; background-image: url(images/sprite.png); background-position: -388px -212px; width: 11px; height: 17px; }
 
-.feedback__form .jq-select li:last-child:hover::before, .feedback__form .jq-select li:last-child.selected::before, .feedback__form .jq-select li.li-3:hover::before, .feedback__form .jq-select li.li-3.selected::before { background-image: url(images/sprite.png); background-position: -386px -69px; width: 11px; height: 17px; }
+.feedback__form .jq-select li:last-child:hover::before, .feedback__form .jq-select li:last-child.selected::before, .feedback__form .jq-select li.li-3:hover::before, .feedback__form .jq-select li.li-3.selected::before { background-image: url(images/sprite.png); background-position: -386px -179px; width: 11px; height: 17px; }
+
+.feedback__form .jq-select .jq-selectbox__trigger { width: 50px; }
+
+.feedback__form .jq-select .jq-selectbox__trigger-arrow { width: 11px; height: 11px; border-left: 4px solid #4cb050; border-bottom: 4px solid #4cb050; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
 .feedback__form .button { vertical-align: middle; }
 
@@ -361,3 +387,181 @@ The `sprites` mixin generates identical output to the CSS template
 .footer .rabotavamrest-link { margin: 0 0 0 80px; }
 
 /*end of footer*/
+/*breadcrumbs*/
+.breadcrumbs { margin: 0; }
+
+.breadcrumbs .container { position: relative; }
+
+.breadcrumbs ul { position: absolute; top: 30px; left: 80px; }
+
+.breadcrumbs li { margin: 0 10px 0 0; padding: 0 25px 0 0; display: inline-block; vertical-align: top; position: relative; }
+
+.breadcrumbs li::before { content: ''; position: absolute; top: 6px; right: 0; background-image: url(images/sprite.png); background-position: -386px -196px; width: 9px; height: 10px; }
+
+.breadcrumbs li:last-child::before { display: none; }
+
+.breadcrumbs li a { margin: 0; display: block; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #b7b7b7; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+/*end of breadcrumbs*/
+/*company-promo*/
+.company-promo .container { margin: 0 auto 40px; padding: 0 0 0 80px; box-sizing: border-box; }
+
+.company-promo__text { display: table-cell; padding: 85px 25px 0 0; width: 26%; box-sizing: border-box; }
+
+.company-promo__text h2 { margin: 0 0 45px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 48px; line-height: 1.2em; font-weight: 400; color: #363636; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-promo__text p { margin: 0 0 20px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-promo__text p a { color: #616161; }
+
+.company-promo__photo { margin: 0; display: table-cell; vertical-align: bottom; width: 74%; box-sizing: border-box; background: url("images/company-promo__photo-1.jpg") no-repeat center top; }
+
+.company-promo__photo ul { padding: 20px 0; font-size: 0; background: rgba(40, 62, 119, 0.47); }
+
+.company-promo__photo ul li { display: inline-block; vertical-align: top; width: 50%; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+
+.company-promo__photo ul li b { margin: 0; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 72px; line-height: 1em; font-weight: 400; }
+
+/*end of company-promo*/
+/*company-about*/
+.company-about__nav { margin: 0 0 70px; }
+
+.company-about__nav ul { margin: 0 80px; font-size: 0; }
+
+.company-about__nav ul li { margin: 0 15px 0 0; display: inline-block; vertical-align: top; min-width: 160px; background: #fff; border: 2px solid #ccc; box-sizing: border-box; border-radius: 3px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 14px; line-height: 46px; font-weight: 400; color: #ccc; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; cursor: pointer; }
+
+.company-about__nav ul li:hover, .company-about__nav ul li:focus, .company-about__nav ul li.active { line-height: 46px; border-color: #212e50; background: #212e50; color: #fff; }
+
+.company-about__school { line-height: 0; text-align: center; }
+
+.company-about__honeycomb { padding: 40px 0 50px; }
+
+.company-about__honeycomb h2 { margin: 0 0 45px; }
+
+.company-about__honeycomb-list { position: relative; }
+
+.company-about__honeycomb-list li { position: absolute; top: 0; left: 50%; width: 120px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+
+.company-about__honeycomb-list li:first-child { margin: 0 0 0 -15px; top: 44px; }
+
+.company-about__honeycomb-list li:nth-child(2) { margin: 0 0 0 -105px; top: 208px; }
+
+.company-about__honeycomb-list li:nth-child(3) { margin: 0 0 0 -192px; top: 365px; }
+
+.company-about__honeycomb-list li:last-child { margin: 0 0 0 -17px; top: 376px; }
+
+.company-about__honeycomb-text { margin: 0 auto; max-width: 1245px; position: relative; }
+
+.company-about__honeycomb-text li { position: absolute; top: 0; left: 50%; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__honeycomb-text li:first-child { top: 60px; margin: 0 0 0 140px; }
+
+.company-about__honeycomb-text li:nth-child(2) { top: 215px; }
+
+.company-about__honeycomb-text li:nth-child(2) p { position: absolute; top: 0; right: 145px; margin: 0 0 0 -610px; }
+
+.company-about__honeycomb-text li:last-child { top: 360px; margin: 0 0 0 140px; }
+
+.company-about__honeycomb-img { margin: 0 0 40px; display: inline-block; vertical-align: top; }
+
+.company-about__honeycomb p { margin: 0 80px 20px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__case { padding: 40px 0 50px; }
+
+.company-about__case h2 { margin: 0 0 45px; }
+
+.company-about__case-features { margin: 0 0 20px; font-size: 0; }
+
+.company-about__case-features li .img { display: table-cell; vertical-align: top; width: 310px; }
+
+.company-about__case-features li .img img { max-width: 100%; }
+
+.company-about__case-features li p { padding: 0 45px; box-sizing: border-box; display: table-cell; vertical-align: middle; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__case-features li:first-child { background: #212e50; }
+
+.company-about__case-features li:nth-child(2) { background: #519dcf; }
+
+.company-about__case-features li:last-child { background: url("images/edu-bg-1.jpg") repeat 0 0; }
+
+.company-about__case-features li:last-child p { color: #212e50; }
+
+.company-about__case-arrow { margin: 0 auto; padding: 100px 0 0; box-sizing: border-box; min-height: 334px; background: url("images/company-about__case-arrow.png") no-repeat center top; font-size: 0; text-align: center; }
+
+.company-about__case-arrow li { margin: 0 8px 0 0; padding: 35px 20px 0; box-sizing: border-box; width: 185px; min-height: 135px; display: inline-block; vertical-align: top; background: #5b9bd5; border-radius: 22px; border: 1px solid #fff; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 24px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+
+.company-about__case-arrow li span { display: block; font-size: 11px; line-height: 1.2em; }
+
+.company-about__students { margin: 0; padding: 40px 80px; background: url("images/woman.png") no-repeat right top/auto 100%; }
+
+.company-about__students h3 { margin: 0 0 65px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 42px; line-height: 1.2em; font-weight: 400; color: #519dcf; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__students p { margin: 0 0 65px; padding: 0 0 0 55px; max-width: 70%; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 24px; line-height: 1.2em; font-weight: 400; color: #212e50; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
+
+.company-about__students p::before { content: ''; position: absolute; top: 10px; left: 0; background-image: url(images/sprite.png); background-position: -291px -143px; width: 19px; height: 19px; }
+
+.company-about__students p a { color: #212e50; }
+
+.company-about__themes { margin: 0; padding: 60px 80px 50px; background: #4cb050 url("images/company-about__themes-bg-1.jpg") repeat-x center 10%/100% auto; }
+
+.company-about__themes h2 { margin: 0 0 10px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 42px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__themes p { margin: 0 0 45px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__themes ul li { margin: 0 0 35px; padding: 0 0 0 40px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 24px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
+
+.company-about__themes ul li::before { content: ''; position: absolute; top: 5px; left: 0; background-image: url(images/sprite.png); background-position: -272px -143px; width: 19px; height: 19px; }
+
+.company-about__themes ul li:last-child { padding: 0; }
+
+.company-about__themes ul li:last-child::before { display: none; }
+
+.company-about__themes ul li a { display: block; color: #fff; }
+
+.company-about__themes b { margin: 0 0 40px; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 48px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+
+.company-about__experts { padding: 40px 0 55px; text-align: center; }
+
+.company-about__experts h2 { margin: 0 0 70px; }
+
+.company-about__experts-slider { margin: 0 0 60px; padding: 0 80px; position: relative; }
+
+.company-about__experts-slider ul { font-size: 0; text-align: left; }
+
+.company-about__experts-slider ul li { margin: 0 .05% 0; background: url("images/company-about__experts-slider-item.png") repeat 0 0; display: inline-block; vertical-align: top; width: 100%; min-height: 460px; text-align: left; }
+
+.company-about__experts-slider ul li .img { margin: 20px auto 20px; padding: 8px; box-sizing: border-box; box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.24); width: 184px; height: 184px; border-radius: 50%; background: #fff; overflow: hidden; line-height: 0; }
+
+.company-about__experts-slider ul li .img img { max-width: 100%; border-radius: 50%; }
+
+.company-about__experts-slider ul li h4 { margin: 0 15px 10px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #363636; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__experts-slider ul li span { margin: 0 15px 20px; display: block; font-family: OpenSans-Light, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #b2b2b2; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__experts-slider ul li p { margin: 0 15px 15px; font-family: OpenSans-Light, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #464646; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.company-about__experts-slider ul li p.hidden { display: none; }
+
+.company-about__experts-slider ul li b { margin: 0 15px 15px; display: inline-block; font-family: OpenSans-Semibold, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #519dcf; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; cursor: pointer; }
+
+.company-about__experts-slider ul li i { margin: 0 15px 15px; display: none; font-family: OpenSans-Semibold, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #959595; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; cursor: pointer; font-style: normal; }
+
+.company-about__experts-slider ul li i.show { display: block; }
+
+.company-about__experts-arrow-left { position: absolute; top: 0; left: -79px; height: 100%; width: 78px; cursor: pointer; }
+
+.company-about__experts-arrow-left::before { content: ''; position: absolute; top: 50%; left: 50%; margin: -27px 0 0 -15px; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; }
+
+.company-about__experts-arrow-left:hover, .company-about__experts-arrow-left:focus { background: #eaf3f9; }
+
+.company-about__experts-arrow-left:hover::before, .company-about__experts-arrow-left:focus::before { background-image: url(images/sprite.png); background-position: -363px -69px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.company-about__experts-arrow-right { position: absolute; top: 0; right: -79px; height: 100%; width: 78px; cursor: pointer; }
+
+.company-about__experts-arrow-right::before { content: ''; position: absolute; top: 50%; right: 50%; margin: -27px -15px 0 0; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.company-about__experts-arrow-right:hover, .company-about__experts-arrow-right:focus { background: #eaf3f9; }
+
+.company-about__experts-arrow-right:hover::before, .company-about__experts-arrow-right:focus::before { background-image: url(images/sprite.png); background-position: -363px -69px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
+
+/*end of company-about*/

@@ -1,0 +1,52 @@
+/*breadcrumbs*/
+.breadcrumbs{
+	margin: 0;
+
+	.container{
+		position: relative;
+	}
+
+	ul{
+		position: absolute;
+		top: 30px;
+		left: 80px;
+	}
+
+	li{
+		margin: 0 10px 0 0;
+		padding: 0 25px 0 0;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+			top: 6px;
+			right: 0;
+			@include sprite($breadcrumbs-arrow);
+		}
+
+		&:last-child{
+
+			&::before{
+				display: none;
+			}
+		}
+
+		a{
+			margin: 0;
+			display: block;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+	}
+}
+/*end of breadcrumbs*/

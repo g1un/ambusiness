@@ -9,12 +9,25 @@
 
 	&__arrow-right{
 		right: 0;
-		@include sprite($arrow-right);
+		@include sprite($arrow-left);
+		transform: rotate(180deg);
+
+		&:hover,
+		&:focus{
+			@include sprite($arrow-right);
+			transform: none;
+		}
 	}
 
 	&__arrow-left{
 		left: 0;
 		@include sprite($arrow-left);
+
+		&:hover,
+		&:focus{
+			@include sprite($arrow-right);
+			transform: rotate(180deg);
+		}
 	}
 
 	&__slider{
@@ -27,20 +40,16 @@
 
 			li{
 				padding: 35px 30px;
+				box-sizing: border-box;
 				display: inline-block;
 				vertical-align: top;
 				background: #29448a url('images/professionals-slider-item-bg.png') no-repeat 98% 30px;
 				line-height: 0;
 
-				.img{
-					display: table-cell;
-					width: 200px;
-					vertical-align: middle;
-				}
-
 				img{
 					margin: 0;
 					display: block;
+					float: left;
 					width: 162px;
 					height: 162px;
 					border-radius: 50%;
@@ -48,9 +57,8 @@
 				}
 
 				.text{
+					margin: 0 0 0 162px;
 					padding: 0 0 0 30px;
-					display: table-cell;
-					width: 100%;
 				}
 
 				h4{

@@ -4,6 +4,7 @@ html
 		title «AmRest»
 		meta(charset="UTF-8")
 		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+		link(rel='stylesheet', type='text/css', href='css/slick.css')
 		link(rel='stylesheet', type='text/css', href='style.css')
 	body
 		//HEADER
@@ -12,7 +13,7 @@ html
 				div.header__application
 					a(href='#') Отправить заявку
 				div.logo
-					img(src='images/logo.png' alt='logo')
+					img(src='images/logo.jpg' alt='logo')
 				nav.header__nav
 					ul
 						li
@@ -58,8 +59,14 @@ html
 						div.professionals__arrow-right.arrow
 						ul
 							li
-								div.img
-									img(src='images/oksana.jpg' alt='oksana')
+								img(src='images/oksana.jpg' alt='oksana')
+								div.text
+									h4 Оксана Станишевска
+									span Chief Administration Officer
+									p Задача аналитиков – стимулировать ваше мышление, а не преподносить вам на тарелочке способ заработать деньги.<br>
+										|Не путайте, не верьте, не разочаровывайтесь.
+							li
+								img(src='images/oksana.jpg' alt='oksana')
 								div.text
 									h4 Оксана Станишевска
 									span Chief Administration Officer
@@ -133,6 +140,12 @@ html
 							span Кармин Галло
 							h4 «Правила Apple. Принципы создания искренней лояльности»
 							p В любой сфере, от бизнеса до политики, известные личности, чья личная или профессиональная жизнь привлекает всеобщее внимание - мастера создавать и преподносить прекрасные сообщения.
+						li
+							img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+							a(href='#').more-link Подробнее о книге
+							span Галло Кармин
+							h4 «Правила Apple. Принципы создания искренней лояльности»
+							p В любой сфере, от бизнеса до политики, известные личности, чья личная или профессиональная жизнь привлекает всеобщее внимание - мастера создавать и преподносить прекрасные сообщения.
 
 		section.coaching
 			div.container
@@ -146,6 +159,7 @@ html
 					li Узнаете об эффективных инструментах и методах коучинга
 					li Примерите на себя роль коуча и тренера
 
+		//FEEDBACK
 		section.feedback
 			div.container
 				h2.section-title Оформите заявку или задайте вопрос
@@ -158,6 +172,7 @@ html
 							option(value='3') Заказать кейс
 							option(value='4') Задать вопрос
 					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+		//end of FEEDBACK
 
 		//FOOTER
 		footer.footer
@@ -172,5 +187,6 @@ html
 		//SCRIPTS
 		script(src='js/jquery-2.2.3.min.js')
 		script(src='js/jquery.formstyler.min.js')
+		script(src='js/slick.min.js')
 		script(src='js/script.js')
 		//end of SCRIPTS
