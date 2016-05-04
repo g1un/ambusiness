@@ -21,8 +21,10 @@
 		text-align: left;
 
 		&-item{
-			padding: 0 0 50px 160px;
+			margin: 0 0 50px;
+			padding: 0 0 0 160px;
 			box-sizing: border-box;
+			min-height: 124px;
 			display: inline-block;
 			vertical-align: top;
 			width: 48%;

@@ -124,6 +124,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 .header__nav ul li a { margin: 0; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; }
 
+.header__nav ul li a:hover, .header__nav ul li a:focus, .header__nav ul li a.selected { text-decoration: underline; }
+
 .header--blue .container { background: #519dcf; }
 
 .header--blue .header__nav ul li a { color: #212e50; }
@@ -212,7 +214,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .business-cases__list { margin: 0 80px; font-size: 0; text-align: left; }
 
-.business-cases__list-item { padding: 0 0 50px 160px; box-sizing: border-box; display: inline-block; vertical-align: top; width: 48%; position: relative; }
+.business-cases__list-item { margin: 0 0 50px; padding: 0 0 0 160px; box-sizing: border-box; min-height: 124px; display: inline-block; vertical-align: top; width: 48%; position: relative; }
 
 .business-cases__list-item::before { content: ''; position: absolute; top: 0; left: 0; border-radius: 62px; box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.24); background-image: url(images/sprite.png); background-position: -194px 0px; width: 124px; height: 124px; }
 

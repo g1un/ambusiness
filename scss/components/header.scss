@@ -68,6 +68,12 @@
 					text-decoration: none;
 					letter-spacing: 0;
 					text-align: center;
+
+					&:hover,
+					&:focus,
+					&.selected{
+						text-decoration: underline;
+					}
 				}
 			}
 		}
