@@ -1,0 +1,205 @@
+/*coaching-page*/
+.coaching-page{
+
+	&__info{
+		padding: 80px 80px 0;
+
+		h2{
+			margin: 0 0 15px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 48px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #363636;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		p{
+			margin: 0 0 50px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #616161;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+
+			a{
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.5em;
+				font-weight: 400;
+				color: #616161;
+				text-transform: none;
+				text-decoration: underline;
+				letter-spacing: 0;
+				text-align: left;
+			}
+		}
+
+		ul{
+			margin: 0 0 50px;
+
+			li{
+				padding: 0 0 0 35px;
+				position: relative;
+				margin: 0 0 25px;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #616161;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: left;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					@include sprite($green-item-check);
+				}
+			}
+		}
+	}
+
+	&__specialists{
+		padding: 35px 80px;
+		background: url("images/company-about__experts-slider-item.png") repeat 0 0;
+		text-align: center;
+
+		h3{
+			margin: 0 0 35px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 36px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #283e77;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		ul{
+			margin: 0 0 50px;
+			font-size: 0;
+			text-align: left;
+
+			li{
+				margin: 0;
+				padding: 15px;
+				display: inline-block;
+				vertical-align: top;
+				width: 25%;
+				box-sizing: border-box;
+				min-height: 460px;
+				text-align: left;
+
+				.img{
+					margin: 20px auto 20px;
+					padding: 8px;
+					box-sizing: border-box;
+					box-shadow: 0 1px 7px 0 rgba(0,0,0,.24);
+					width: 184px;
+					height: 184px;
+					border-radius: 50%;
+					background: #fff;
+					overflow: hidden;
+					line-height: 0;
+
+					img{
+						max-width: 100%;
+						border-radius: 50%;
+					}
+				}
+
+				h4{
+					margin: 0 15px 10px;
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 21px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #283e77;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				span{
+					margin: 0 15px 20px;
+					display: block;
+					font-family: OpenSans-Light, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #363636;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				p{
+					margin: 0 15px 15px;
+					font-family: OpenSans-Light, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #959595;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+
+					&.hidden{
+						display: none;
+					}
+				}
+
+				a{
+					margin: 0 15px 15px;
+					display: inline-block;
+					font-family: OpenSans-Regular, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #455684;
+					text-transform: none;
+					text-decoration: underline;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				i{
+					margin: 0 15px 15px;
+					display: none;
+					font-family: OpenSans-Semibold, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #959595;
+					text-transform: none;
+					text-decoration: underline;
+					letter-spacing: 0;
+					text-align: left;
+					cursor: pointer;
+					font-style: normal;
+
+					&.show{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+/*end of coaching-page*/

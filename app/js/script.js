@@ -46,6 +46,17 @@ $(document).ready(function(){
 			adaptiveHeight: true
 		});
 	}
+
+	/*training-page__slider*/
+	if($('.training-page__slider ul').length){
+		$('.training-page__slider ul').slick({
+			autoplay: true,
+			arrows: false,
+			autoplaySpeed: 5000
+		});
+	}
+	/*end of training-page__slider*/
+
 	/*end of slick&owl-carousel*/
 
 	if($('.company-about__experts-slider').length){

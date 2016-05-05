@@ -1,0 +1,29 @@
+/*pagination*/
+.pagination{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		min-width: 30px;
+		font-family: Roboto-Bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover,
+		&:focus,
+		&.active{
+			background: #378cc4;
+		}
+	}
+}
+/*end of pagination*/

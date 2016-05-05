@@ -1,0 +1,368 @@
+/*training-page*/
+.training-page{
+
+	&__promo{
+
+		.container{
+			padding: 65px 80px 0;
+			box-sizing: border-box;
+			background: url("images/trainings-bg-3.jpg") repeat 0 0;
+		}
+	}
+
+	&__slider{
+		margin: 0 0 50px;
+
+		ul{
+			font-size: 0;
+
+			li{
+				padding: 40px 50px 30px 40px;
+				box-sizing: border-box;
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				background: url("images/company-about__experts-slider-item.png") repeat 0 0,
+										url("images/training-top-slide.jpg") no-repeat center center/100%;
+
+				.date{
+					margin: 0;
+					float: right;
+					width: 135px;
+					position: relative;
+
+					&::before,
+					&::after{
+						content: '';
+						position: absolute;
+						top: -12px;
+						width: 8px;
+						height: 22px;
+						border-radius: 3px;
+						box-shadow: 0 1px 6px 0 rgba(102, 109, 143, 0.45);
+						background: #fff;
+					}
+
+					&::before{
+						left: 32px;
+					}
+
+					&::after{
+						right: 32px;
+					}
+
+					span{
+						padding: 15px 0 5px;
+						display: block;
+						background: #2f4d99;
+						border-bottom: 5px solid #254083;
+						font-family: Roboto-Bold, Helvetica, sans-serif;
+						font-size: 21px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #fff;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: center;
+					}
+
+					b{
+						display: block;
+						background: #fff;
+						border-radius: 0 0 10px 10px;
+						font-family: Roboto-Bold, Helvetica, sans-serif;
+						font-size: 70px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #bababa;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: center;
+					}
+				}
+
+				h3{
+					margin: 65px 0 25px;
+					text-shadow: 0 1px 6px rgba(0,0,0,.45);
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 54px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				h4{
+					margin: 0 0 75px;
+					text-shadow: 0 1px 6px rgba(0,0,0,.45);
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 36px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				.text{
+					position: relative;
+
+					p{
+						padding: 20px;
+						box-sizing: border-box;
+						width: 750px;
+						background: #283e77;
+						font-family: Roboto-Regular, Helvetica, sans-serif;
+						font-size: 21px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #fff;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: left;
+					}
+
+					a{
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__specialists{
+
+		h3{
+			margin: 0 0 30px;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 30px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #212e50;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		ul{
+			font-size: 0;
+			text-align: left;
+
+			li{
+				margin: 0;
+				padding: 15px;
+				display: inline-block;
+				vertical-align: top;
+				width: 25%;
+				box-sizing: border-box;
+				min-height: 460px;
+				text-align: left;
+
+				.img{
+					margin: 20px auto 20px;
+					padding: 8px;
+					box-sizing: border-box;
+					box-shadow: 0 1px 7px 0 rgba(0,0,0,.24);
+					width: 184px;
+					height: 184px;
+					border-radius: 50%;
+					background: #fff;
+					overflow: hidden;
+					line-height: 0;
+
+					img{
+						max-width: 100%;
+						border-radius: 50%;
+					}
+				}
+
+				h4{
+					margin: 0 15px 10px;
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 21px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #283e77;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				span{
+					margin: 0 15px 20px;
+					display: block;
+					font-family: OpenSans-Light, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #363636;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				p{
+					margin: 0 15px 15px;
+					font-family: OpenSans-Light, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #959595;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	&__list{
+		text-align: center;
+
+		.container{
+			padding: 65px 80px 30px;
+			box-sizing: border-box;
+			background: #519dcf;
+		}
+
+		h2{
+			margin: 0 0 20px;
+		}
+
+		h3{
+			margin: 0 0 20px;
+		}
+
+		p{
+			margin: 0 0 30px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 21px;
+			line-height: 36px;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		&-pagination{
+			margin: 20px 0 0;
+			text-align: left;
+		}
+	}
+
+	ul{
+		margin: 0 0 20px;
+	}
+
+	&__item{
+		border-bottom: 1px solid #378cc4;
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+		a{
+			display: block;
+			padding: 30px 10px 20px;
+			font-size: 0;
+			text-decoration: none;
+			text-align: left;
+
+			&:hover,
+			&:focus{
+				background: #378cc4;
+			}
+		}
+
+		.date{
+			margin: 0;
+			float: left;
+
+			span{
+				margin: 0 0 10px;
+				display: block;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+			}
+
+			b{
+				margin: 0;
+				display: block;
+				font-family: Roboto-Bold, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #67bdf5;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+			}
+		}
+
+		h4{
+			margin: 0 0 10px 175px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 21px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		.text{
+			margin: 0 0 0 175px;
+
+			img{
+				margin: 0 15px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+				max-width: 44px;
+				border-radius: 50%;
+			}
+
+			i{
+				display: inline-block;
+				vertical-align: middle;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: left;
+				font-style: normal;
+			}
+		}
+	}
+}
+/*end of training-page*/
