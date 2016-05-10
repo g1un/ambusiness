@@ -401,7 +401,7 @@
 				text-align: left;
 
 				li{
-					margin: 0 .05% 0;
+					margin: 0 5px;
 					//padding: 20px 15px 15px;
 					//box-sizing: border-box;
 					background: url("images/company-about__experts-slider-item.png") repeat 0 0;
@@ -514,7 +514,7 @@
 		&-arrow-left{
 			position: absolute;
 			top: 0;
-			left: -79px;
+			left: 0;
 			height: 100%;
 			width: 78px;
 			cursor: pointer;
@@ -542,7 +542,7 @@
 		&-arrow-right{
 			position: absolute;
 			top: 0;
-			right: -79px;
+			right: 0;
 			height: 100%;
 			width: 78px;
 			cursor: pointer;

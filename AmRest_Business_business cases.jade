@@ -1,0 +1,99 @@
+doctype html
+html
+	head
+		title «AmRest»
+		meta(charset="UTF-8")
+		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+		link(rel='stylesheet', type='text/css', href='style.css')
+	body
+		//HEADER
+		header.header.header--blue
+			div.container.clearfix
+				div.header__application
+					a(href='#') Отправить заявку
+				div.logo
+					img(src='images/logo.jpg' alt='logo')
+				nav.header__nav
+					ul
+						li
+							a(href='#') О нас
+						li
+							a(href='#') Бизнес кейсы
+						li
+							a(href='#') Тренинги
+						li
+							a(href='#') Коучинг
+						li
+							a(href='#') Образование
+						li
+							a(href='#') Обратная связь
+		//end of HEADER
+
+		//BREADCRUMBS
+		div.breadcrumbs
+			div.container
+				ul
+					li
+						a(href='#') Главная
+					li
+						a Бизнес кейсы
+		//end of BREADCRUMBS
+
+		//CONTENT
+		section.business-cases-page
+			div.container
+				h2 Бизнес кейсы
+				p Обучение в AmRest Business Solution - это полноценное системное обучение, происходящее на высокотехнологичной образовательной платформе и позволяющее дистанционно получить знания и навыки по тем или иным программам.
+				ul.business-cases-page__list
+					li.business-cases-page__list-item.business-cases-page__list-item--rocket
+						h4 Fast Track program. Интенсивная подготовка топ-менеджеров в условиях развития компании
+						//p Программа дополнительного образования в области администрирования бизнес-процессов.
+						a(href='#').button.button--blue Подробнее о кейсе
+					li.business-cases-page__list-item.business-cases-page__list-item--communication
+						h4 Построение процесса внутреннего продвижения талантов
+						//p Программа дополнительного образования в области администрирования бизнес-процессов.
+						a(href='#').button.button--blue Подробнее о кейсе
+					li.business-cases-page__list-item.business-cases-page__list-item--hr
+						h4 Выстраивание внутренних процессов в компании
+						//p Программа дополнительного образования в области администрирования бизнес-процессов.
+						a(href='#').button.button--blue Подробнее о кейсе
+					li.business-cases-page__list-item.business-cases-page__list-item--logistic
+						h4 Дистанционное обучение в ресторанах KFC и Pizza Hut
+						//p Программа дополнительного образования в области администрирования бизнес-процессов.
+						a(href='#').button.button--blue Подробнее о кейсе
+					li.business-cases-page__list-item.business-cases-page__list-item--arrows
+						h4 Выстраивание процессов набора в ресторанах
+						a(href='#').button.button--blue Подробнее о кейсе
+
+		//end of CONTENT
+
+		//FEEDBACK
+		section.feedback
+			div.container
+				h2.section-title Оформите заявку или задайте вопрос
+				form(action='#' method='get').feedback__form
+					span Выберите тему обращения
+					div.jq-select
+						select(name='feedback__select' id='feedback__select')
+							option(value='1') Записаться  на тренинг
+							option(value='2') Записаться на коучинг
+							option(value='3') Заказать кейс
+							option(value='4') Задать вопрос
+					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+		//end of FEEDBACK
+
+		//FOOTER
+		footer.footer
+			div.container
+				a(href='#').footer__map.more-link Смотреть на карте
+				h2.section-title Как нас найти
+				span.footer__tel +7 (812) 332-83-10
+				p.footer__address Санкт-Петербург, В.О. Средний пр., 36/40, БЦ «Остров», 3 этаж
+				a(href='#').rabotavamrest-link rabotavamrest.ru
+		//end of FOOTER
+
+		//SCRIPTS
+		script(src='js/jquery-2.2.3.min.js')
+		script(src='js/jquery.formstyler.min.js')
+		script(src='js/script.js')
+		//end of SCRIPTS

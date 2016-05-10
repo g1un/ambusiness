@@ -2,7 +2,11 @@
 .coaching-page{
 
 	&__info{
-		padding: 80px 80px 0;
+
+		.container{
+			padding: 80px 80px 0;
+			box-sizing: border-box;
+		}
 
 		h2{
 			margin: 0 0 15px;
@@ -71,9 +75,13 @@
 	}
 
 	&__specialists{
-		padding: 35px 80px;
-		background: url("images/company-about__experts-slider-item.png") repeat 0 0;
 		text-align: center;
+
+		.container{
+			padding: 35px 80px;
+			box-sizing: border-box;
+			background: url("images/company-about__experts-slider-item.png") repeat 0 0;
+		}
 
 		h3{
 			margin: 0 0 35px;

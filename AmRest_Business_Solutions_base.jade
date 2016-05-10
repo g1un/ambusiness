@@ -1,0 +1,138 @@
+doctype html
+html
+	head
+		title «AmRest»
+		meta(charset="UTF-8")
+		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+		link(rel='stylesheet', type='text/css', href='css/slick.css')
+		link(rel='stylesheet', type='text/css', href='style.css')
+	body
+		//HEADER
+		header.header.header--blue
+			div.container.clearfix
+				div.header__application
+					a(href='#') Отправить заявку
+				div.logo
+					img(src='images/logo.jpg' alt='logo')
+				nav.header__nav
+					ul
+						li
+							a(href='#') О нас
+						li
+							a(href='#') Бизнес кейсы
+						li
+							a(href='#') Тренинги
+						li
+							a(href='#') Коучинг
+						li
+							a(href='#') Образование
+						li
+							a(href='#') Обратная связь
+		//end of HEADER
+
+		//BREADCRUMBS
+		div.breadcrumbs
+			div.container
+				ul
+					li
+						a(href='#') Главная
+					li
+						a База знаний
+		//end of BREADCRUMBS
+
+		//CONTENT
+		section.edu-page
+			div.container
+				h2.page-title База знаний
+				p.text Крупнейшая база знаний: видео, статьи, лекции ведущих спикеров и предпринимателей AmRest Business Solution
+				h3.section-title.section-title--blue Статьи
+				div.edu-page__articles
+					div.edu-page__articles-left
+					div.edu-page__articles-right
+					ul
+						li
+							h4 Индивидуальный план развития
+							p Индивидуальный план развития (ИПР далее) – это эффективный способ развития ключевых компетенций в компании, способствующий внутреннему продвижению, развитию сильных лидеров на всех уровнях,  созданию «скамейки запасных» и повышению эффективности организации через реализацию целей.
+							a(href='#').button.button--blue Подробнее
+						li
+							h4 Методы определения потенциала сотрудников
+							p Внутреннее продвижение сотрудников в компании предоставляет множество преимуществ, начиная с мотивации и удержания сотрудников и заканчивая экономией затрат на набор, адаптацию и т. д.
+							a(href='#').button.button--blue Подробнее
+						li
+							h4 Методы определения потенциала сотрудников
+							p Внутреннее продвижение сотрудников в компании предоставляет множество преимуществ, начиная с мотивации и удержания сотрудников и заканчивая экономией затрат на набор, адаптацию и т. д.
+							a(href='#').button.button--blue Подробнее
+						li
+							h4 Методы определения потенциала сотрудников
+							p Внутреннее продвижение сотрудников в компании предоставляет множество преимуществ, начиная с мотивации и удержания сотрудников и заканчивая экономией затрат на набор, адаптацию и т. д.
+							a(href='#').button.button--blue Подробнее
+				div.edu-page__books
+					h3.section-title Книги
+					div.edu-page__books-list
+						div.edu-page__books-list-left
+						div.edu-page__books-list-right
+						ul
+							li
+								a(href='#')
+									img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+									span Роберт Грант
+									h4 MBA. Современный стратегический анализ.
+							li
+								a(href='#')
+									img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+									span Джейсон Фрайд, Дэвид Хайнемайер Хэнссон
+									h4 Rework. Бизнес без предрассудков.
+							li
+								a(href='#')
+									img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+									span Роберт Грант
+									h4 1.	MBA. Современный стратегический анализ.
+							li
+								a(href='#')
+									img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+									span Роберт Грант
+									h4 1.	MBA. Современный стратегический анализ.
+							li
+								a(href='#')
+									img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+									span Роберт Грант
+									h4 1.	MBA. Современный стратегический анализ.
+							li
+								a(href='#')
+									img(src='images/karmin-gallo.jpg' alt='karmin-gallo')
+									span Роберт Грант
+									h4 1.	MBA. Современный стратегический анализ.
+
+		//end of CONTENT
+
+		//FEEDBACK
+		section.feedback
+			div.container
+				h2.section-title Оформите заявку или задайте вопрос
+				form(action='#' method='get').feedback__form
+					span Выберите тему обращения
+					div.jq-select
+						select(name='feedback__select' id='feedback__select')
+							option(value='1') Записаться  на тренинг
+							option(value='2') Записаться на коучинг
+							option(value='3') Заказать кейс
+							option(value='4') Задать вопрос
+					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+		//end of FEEDBACK
+
+		//FOOTER
+		footer.footer
+			div.container
+				a(href='#').footer__map.more-link Смотреть на карте
+				h2.section-title Как нас найти
+				span.footer__tel +7 (812) 332-83-10
+				p.footer__address Санкт-Петербург, В.О. Средний пр., 36/40, БЦ «Остров», 3 этаж
+				a(href='#').rabotavamrest-link rabotavamrest.ru
+		//end of FOOTER
+
+		//SCRIPTS
+		script(src='js/jquery-2.2.3.min.js')
+		script(src='js/jquery.formstyler.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/script.js')
+		//end of SCRIPTS

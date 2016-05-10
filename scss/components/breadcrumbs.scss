@@ -34,7 +34,8 @@
 			}
 		}
 
-		a{
+		a,
+		span{
 			margin: 0;
 			display: block;
 			font-family: Roboto-Regular, Helvetica, sans-serif;
@@ -46,6 +47,37 @@
 			text-decoration: none;
 			letter-spacing: 0;
 			text-align: left;
+		}
+
+		&:not(:last-child){
+
+			&:hover,
+			&:focus{
+				text-decoration: underline;
+				color: #b7b7b7;
+			}
+		}
+	}
+
+	&--blue{
+
+		ul{
+
+			li{
+
+				a{
+					color: #283e77;
+				}
+
+				&:not(:last-child){
+
+					&:hover,
+					&:focus{
+						text-decoration: underline;
+						color: #283e77;
+					}
+				}
+			}
 		}
 	}
 }

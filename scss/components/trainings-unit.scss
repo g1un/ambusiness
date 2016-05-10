@@ -1,0 +1,308 @@
+/*trainings-unit*/
+.trainings-unit{
+
+	&__header{
+
+		ul{
+			font-size: 0;
+
+			li{
+				padding: 40px 50px 30px 40px;
+				box-sizing: border-box;
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				background: url("images/company-about__experts-slider-item.png") repeat 0 0,
+				url("images/training-top-slide.jpg") no-repeat center center/100%;
+
+				.date{
+					margin: 0;
+					float: right;
+					width: 135px;
+					position: relative;
+
+					&::before,
+					&::after{
+						content: '';
+						position: absolute;
+						top: -12px;
+						width: 8px;
+						height: 22px;
+						border-radius: 3px;
+						box-shadow: 0 1px 6px 0 rgba(102, 109, 143, 0.45);
+						background: #fff;
+					}
+
+					&::before{
+						left: 32px;
+					}
+
+					&::after{
+						right: 32px;
+					}
+
+					span{
+						padding: 15px 0 5px;
+						display: block;
+						background: #2f4d99;
+						border-bottom: 5px solid #254083;
+						font-family: Roboto-Bold, Helvetica, sans-serif;
+						font-size: 21px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #fff;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: center;
+					}
+
+					b{
+						display: block;
+						background: #fff;
+						border-radius: 0 0 10px 10px;
+						font-family: Roboto-Bold, Helvetica, sans-serif;
+						font-size: 70px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #bababa;
+						text-transform: uppercase;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: center;
+					}
+				}
+
+				h3{
+					margin: 65px 0 25px;
+					text-shadow: 0 1px 6px rgba(0,0,0,.45);
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 54px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				h4{
+					margin: 0 0 75px;
+					text-shadow: 0 1px 6px rgba(0,0,0,.45);
+					font-family: Roboto-Bold, Helvetica, sans-serif;
+					font-size: 36px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+
+				.text{
+					position: relative;
+
+					p{
+						padding: 20px;
+						box-sizing: border-box;
+						width: 750px;
+						background: #283e77;
+						font-family: Roboto-Regular, Helvetica, sans-serif;
+						font-size: 21px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #fff;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+						text-align: left;
+					}
+
+					a{
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__slider{
+
+		.container{
+			padding: 50px 80px 10px;
+			box-sizing: border-box;
+			background: #519dcf;
+		}
+
+		&-list{
+			margin: 0 auto;
+			width: 60%;
+			font-size: 0;
+
+			li{
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				position: relative;
+
+				img{
+					max-width: 100%;
+				}
+
+				p{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 20px;
+					box-sizing: border-box;
+					background: rgba(40, 62, 119, 0.47);
+					font-family: Roboto-Regular, Helvetica, sans-serif;
+					font-size: 18px;
+					line-height: 1.5em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: left;
+				}
+			}
+		}
+
+		&-dots{
+			margin: 20px auto;
+			font-size: 0;
+			text-align: center;
+
+			li{
+				margin: 0 5px;
+				display: inline-block;
+				vertical-align: top;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				background: #fff;
+				box-shadow: inset 0 5px 5px 0 rgba(0,0,0,.25);
+				cursor: pointer;
+
+				&.slick-active{
+					position: relative;
+
+					&::after{
+						content: '';
+						position: absolute;
+						top: 7px;
+						left: 7px;
+						border-radius: 50%;
+						width: 14px;
+						height: 14px;
+						background: #519dcf;
+						box-shadow: inset 0 5px 5px 0 rgba(0,0,0,.25);
+					}
+				}
+
+				button{
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__info{
+		text-align: center;
+
+		.container{
+			padding: 45px 80px 0;
+			box-sizing: border-box;
+		}
+
+		h2{
+			margin: 20px 0;
+		}
+
+		h3{
+			margin: 20px 0;
+		}
+
+		h4{
+			margin: 10px 0;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #616161;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		p{
+			margin: 20px 0 40px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #616161;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		ul{
+			margin: 20px 0 40px;
+			background: url("images/trainings-unit__info-list.png") no-repeat center top;
+			min-height: 187px;
+			position: relative;
+
+			li{
+				margin: 10px;
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 21px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #519dcf;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: left;
+
+				&:first-child{
+					position: absolute;
+					top: 8px;
+					right: 50%;
+					margin: 0 80px 0 0;
+				}
+
+				&:nth-child(2){
+					position: absolute;
+					top: 52px;
+					left: 50%;
+					margin: 0 0 0 80px;
+				}
+
+				&:nth-child(3){
+					position: absolute;
+					top: 96px;
+					right: 50%;
+					margin: 0 80px 0 0;
+				}
+
+				&:last-child{
+					position: absolute;
+					top: 145px;
+					left: 50%;
+					margin: 0 0 0 80px;
+				}
+			}
+		}
+	}
+}
+/*end of trainings-unit*/

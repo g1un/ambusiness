@@ -1,0 +1,145 @@
+doctype html
+html
+	head
+		title «AmRest»
+		meta(charset="UTF-8")
+		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+		link(rel='stylesheet', type='text/css', href='css/slick.css')
+		link(rel='stylesheet', type='text/css', href='style.css')
+	body
+		//HEADER
+		header.header.header--blue
+			div.container.clearfix
+				div.header__application
+					a(href='#') Отправить заявку
+				div.logo
+					img(src='images/logo.jpg' alt='logo')
+				nav.header__nav
+					ul
+						li
+							a(href='#') О нас
+						li
+							a(href='#') Бизнес кейсы
+						li
+							a(href='#') Тренинги
+						li
+							a(href='#') Коучинг
+						li
+							a(href='#') Образование
+						li
+							a(href='#') Обратная связь
+		//end of HEADER
+
+		//BREADCRUMBS
+		div.breadcrumbs.breadcrumbs--blue
+			div.container
+				ul
+					li
+						a(href='#') Главная
+					li
+						a(href='#') Тренинги и семинары
+					li
+						a Создание бренда: от идеи до капитализации
+		//end of BREADCRUMBS
+
+		//CONTENT
+		section.trainigs-unit
+			div.container
+				div.trainings-unit__header
+					ul
+						li
+							div.date
+								span сентября
+								b 27
+							h3 Яркие лидеры:
+							h4 Как достичь высоких результатов вместе с командой
+							div.text
+								p Превосходная возможность усилить свое лидерство, использовать самые передовые подходы и эффективно решать бизнес-задачи с командой с помощью кейс-школы ABS
+								a(href='#').button Зарегистрироваться
+
+		section.trainings-unit__slider
+			div.container
+				ul.trainings-unit__slider-list
+					li
+						img(src='images/photos/IMG_3900.JPG' alt='IMG_3900.JPG')
+						p 1. Разработка индивидуального плана улучшения для каждого участника
+					li
+						img(src='images/photos/IMG_3962.JPG' alt='IMG_3962.JPG')
+						p 2. Практика самопрезентации и эффективной коммуникации
+					li
+						img(src='images/photos/IMG_4022.JPG' alt='IMG_4022.JPG')
+						p 3. Построение доверия в команде как основа для продуктивных отношений
+					li
+						img(src='images/photos/IMG_5527.jpg' alt='IMG_5527.jpg')
+						p 4. Использование самых действенных методов в индивидуальном подходе к сотрудникам
+					li
+						img(src='images/photos/IMG_5540.jpg' alt='IMG_5540.jpg')
+						p 5. Кейсы AmRest и других российских компаний, а также разбор ваших кейсов
+
+		section.trainings-unit__info
+			div.container
+				h2.section-title.section-title--blue В чем заключается главная ценность программы:
+				p Вы сможете усилить свое лидерство и повысить реализацию целей вместе с командой
+				h3.section-subtitle Для кого будет интересна эта программа:
+				ul
+					li для начинающих и опытных руководителей
+					li профессионалов
+					li студентов
+					li для всех, кто нацелен на продуктивную работу и хочет действительно изменить реальность к лучшему!
+				h4 Длительность программы:
+				p Два дня (с 10.00 до 19.00) + индивидуальная встреча по движению в течение месяца
+				h4 Ближайшая программа:
+				p 27 августа
+				h4 Тренер
+				p Галина Филон
+
+
+
+		section.partners
+			div.container
+				h2.section-title.section-title--blue Партнеры
+				ul
+					li
+						img(src='images/pizza-hut.jpg' alt='pizza-hut')
+					li
+						img(src='images/kfc.png' alt='kfc')
+					li
+						img(src='images/pizza-hut.jpg' alt='pizza-hut')
+					li
+						img(src='images/kfc.png' alt='kfc')
+					li
+						img(src='images/pizza-hut.jpg' alt='pizza-hut')
+
+		//end of CONTENT
+
+		//FEEDBACK
+		section.feedback
+			div.container
+				h2.section-title Оформите заявку или задайте вопрос
+				form(action='#' method='get').feedback__form
+					span Выберите тему обращения
+					div.jq-select
+						select(name='feedback__select' id='feedback__select')
+							option(value='1') Записаться  на тренинг
+							option(value='2') Записаться на коучинг
+							option(value='3') Заказать кейс
+							option(value='4') Задать вопрос
+					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+		//end of FEEDBACK
+
+		//FOOTER
+		footer.footer
+			div.container
+				a(href='#').footer__map.more-link Смотреть на карте
+				h2.section-title Как нас найти
+				span.footer__tel +7 (812) 332-83-10
+				p.footer__address Санкт-Петербург, В.О. Средний пр., 36/40, БЦ «Остров», 3 этаж
+				a(href='#').rabotavamrest-link rabotavamrest.ru
+		//end of FOOTER
+
+		//SCRIPTS
+		script(src='js/jquery-2.2.3.min.js')
+		script(src='js/jquery.formstyler.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/script.js')
+		//end of SCRIPTS

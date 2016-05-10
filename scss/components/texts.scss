@@ -34,6 +34,30 @@
 	}
 }
 
+.page-title{
+	font-family: Roboto-Bold, Helvetica, sans-serif;
+	font-size: 48px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #363636;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.text{
+	font-family: Roboto-Regular, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #616161;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+	text-align: left;
+}
+
 .more-link{
 	margin: 0;
 	display: block;
@@ -50,10 +74,37 @@
 	text-decoration: none;
 	letter-spacing: 0;
 	text-align: center;
+	transition: background .25s, border .25s, color .25s;
 	
 	&--green{
 		border-color: #4cb050;
 		color: #4cb050;
+		
+		&:hover,
+		&:focus{
+			color: #fff;
+			background: #4cb050;
+		}
+	}
+
+	&--dark-green{
+
+		&:hover,
+		&:focus{
+			border-color: #2f7d32;
+			color: #fff;
+			background: #2f7d32;
+		}
+	}
+
+	&--blue{
+
+		&:hover,
+		&:focus{
+			border-color: #283e77;
+			background: #283e77;
+			color: #fff;
+		}
 	}
 }
 
@@ -92,6 +143,19 @@
 		&:focus{
 			padding: 0;
 			background: #fff;
+		}
+	}
+
+	&--blue{
+		border: 1px solid #519dcf;
+		background: transparent;
+		color: #519dcf;
+		
+
+		&:hover,
+		&:focus{
+			color: #fff;
+			background: #519dcf;
 		}
 	}
 }
