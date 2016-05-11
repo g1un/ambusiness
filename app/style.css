@@ -356,33 +356,33 @@ The `sprites` mixin generates identical output to the CSS template
 
 .feedback__form .jq-select .jq-selectbox__select-text::before { content: ''; position: absolute; top: 8px; left: 8px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-0::before { background-image: url(images/sprite.png); background-position: -272px -149px; width: 25px; height: 25px; }
+.feedback__form .jq-select .jq-selectbox__select-text.li-0::before { background-image: url(images/sprite.png); background-position: -243px -224px; width: 25px; height: 25px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-1::before { background-image: url(images/sprite.png); background-position: -265px -224px; width: 22px; height: 22px; }
+.feedback__form .jq-select .jq-selectbox__select-text.li-1::before { background-image: url(images/sprite.png); background-position: -243px -249px; width: 22px; height: 22px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-2::before { background-image: url(images/sprite.png); background-position: -287px -246px; width: 22px; height: 19px; }
+.feedback__form .jq-select .jq-selectbox__select-text.li-2::before { background-image: url(images/sprite.png); background-position: -287px -249px; width: 22px; height: 19px; }
 
-.feedback__form .jq-select .jq-selectbox__select-text.li-3::before { left: 13px; background-image: url(images/sprite.png); background-position: -297px -149px; width: 11px; height: 17px; }
+.feedback__form .jq-select .jq-selectbox__select-text.li-3::before { left: 13px; background-image: url(images/sprite.png); background-position: -90px -290px; width: 11px; height: 17px; }
 
 .feedback__form .jq-select li { padding: 10px 10px 10px 60px; position: relative; }
 
 .feedback__form .jq-select li::before { content: ''; position: absolute; top: 10px; left: 15px; }
 
-.feedback__form .jq-select li:first-child::before, .feedback__form .jq-select li.li-0::before { background-image: url(images/sprite.png); background-position: -272px -124px; width: 25px; height: 25px; }
+.feedback__form .jq-select li:first-child::before, .feedback__form .jq-select li.li-0::before { background-image: url(images/sprite.png); background-position: -293px -224px; width: 25px; height: 25px; }
 
-.feedback__form .jq-select li:first-child:hover::before, .feedback__form .jq-select li:first-child.selected::before, .feedback__form .jq-select li.li-0:hover::before, .feedback__form .jq-select li.li-0.selected::before { background-image: url(images/sprite.png); background-position: -318px -257px; width: 25px; height: 25px; }
+.feedback__form .jq-select li:first-child:hover::before, .feedback__form .jq-select li:first-child.selected::before, .feedback__form .jq-select li.li-0:hover::before, .feedback__form .jq-select li.li-0.selected::before { background-image: url(images/sprite.png); background-position: -268px -224px; width: 25px; height: 25px; }
 
-.feedback__form .jq-select li:nth-child(2)::before, .feedback__form .jq-select li.li-1::before { background-image: url(images/sprite.png); background-position: -287px -224px; width: 22px; height: 22px; }
+.feedback__form .jq-select li:nth-child(2)::before, .feedback__form .jq-select li.li-1::before { background-image: url(images/sprite.png); background-position: -265px -249px; width: 22px; height: 22px; }
 
-.feedback__form .jq-select li:nth-child(2):hover::before, .feedback__form .jq-select li:nth-child(2).selected::before, .feedback__form .jq-select li.li-1:hover::before, .feedback__form .jq-select li.li-1.selected::before { background-image: url(images/sprite.png); background-position: -243px -224px; width: 22px; height: 22px; }
+.feedback__form .jq-select li:nth-child(2):hover::before, .feedback__form .jq-select li:nth-child(2).selected::before, .feedback__form .jq-select li.li-1:hover::before, .feedback__form .jq-select li.li-1.selected::before { background-image: url(images/sprite.png); background-position: -296px -124px; width: 22px; height: 22px; }
 
-.feedback__form .jq-select li:nth-child(3)::before, .feedback__form .jq-select li.li-2::before { background-image: url(images/sprite.png); background-position: -265px -246px; width: 22px; height: 19px; }
+.feedback__form .jq-select li:nth-child(3)::before, .feedback__form .jq-select li.li-2::before { background-image: url(images/sprite.png); background-position: -294px -155px; width: 22px; height: 19px; }
 
-.feedback__form .jq-select li:nth-child(3):hover::before, .feedback__form .jq-select li:nth-child(3).selected::before, .feedback__form .jq-select li.li-2:hover::before, .feedback__form .jq-select li.li-2.selected::before { background-image: url(images/sprite.png); background-position: -243px -246px; width: 22px; height: 19px; }
+.feedback__form .jq-select li:nth-child(3):hover::before, .feedback__form .jq-select li:nth-child(3).selected::before, .feedback__form .jq-select li.li-2:hover::before, .feedback__form .jq-select li.li-2.selected::before { background-image: url(images/sprite.png); background-position: -272px -155px; width: 22px; height: 19px; }
 
-.feedback__form .jq-select li:last-child::before, .feedback__form .jq-select li.li-3::before { left: 20px; background-image: url(images/sprite.png); background-position: -49px -290px; width: 11px; height: 17px; }
+.feedback__form .jq-select li:last-child::before, .feedback__form .jq-select li.li-3::before { left: 20px; background-image: url(images/sprite.png); background-position: -79px -290px; width: 11px; height: 17px; }
 
-.feedback__form .jq-select li:last-child:hover::before, .feedback__form .jq-select li:last-child.selected::before, .feedback__form .jq-select li.li-3:hover::before, .feedback__form .jq-select li.li-3.selected::before { background-image: url(images/sprite.png); background-position: -60px -290px; width: 11px; height: 17px; }
+.feedback__form .jq-select li:last-child:hover::before, .feedback__form .jq-select li:last-child.selected::before, .feedback__form .jq-select li.li-3:hover::before, .feedback__form .jq-select li.li-3.selected::before { background-image: url(images/sprite.png); background-position: -68px -290px; width: 11px; height: 17px; }
 
 .feedback__form .jq-select .jq-selectbox__trigger { width: 50px; }
 
@@ -404,6 +404,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 .footer .rabotavamrest-link { margin: 0 0 0 80px; }
 
+.footer .developer { margin: 28px 80px 0 0; display: block; float: right; font-family: "Open Sans", sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: right; }
+
+.footer .developer:hover, .footer .developer:focus { text-decoration: underline; }
+
 /*end of footer*/
 /*breadcrumbs*/
 .breadcrumbs { margin: 0; }
@@ -422,7 +426,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .breadcrumbs li:not(:last-child):hover, .breadcrumbs li:not(:last-child):focus { text-decoration: underline; color: #b7b7b7; }
 
-.breadcrumbs--blue ul li a { color: #283e77; }
+.breadcrumbs--blue ul li a, .breadcrumbs--blue ul li span { color: #283e77; }
 
 .breadcrumbs--blue ul li:not(:last-child):hover, .breadcrumbs--blue ul li:not(:last-child):focus { text-decoration: underline; color: #283e77; }
 
@@ -522,7 +526,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .company-about__students p { margin: 0 0 65px; padding: 0 0 0 55px; max-width: 70%; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 24px; line-height: 1.2em; font-weight: 400; color: #212e50; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
 
-.company-about__students p::before { content: ''; position: absolute; top: 10px; left: 0; background-image: url(images/sprite.png); background-position: -297px -124px; width: 19px; height: 19px; }
+.company-about__students p::before { content: ''; position: absolute; top: 10px; left: 0; background-image: url(images/sprite.png); background-position: -49px -290px; width: 19px; height: 19px; }
 
 .company-about__students p a { color: #212e50; }
 
@@ -534,7 +538,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .company-about__themes ul li { margin: 0 0 35px; padding: 0 0 0 40px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 24px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
 
-.company-about__themes ul li::before { content: ''; position: absolute; top: 5px; left: 0; background-image: url(images/sprite.png); background-position: -343px -257px; width: 19px; height: 19px; }
+.company-about__themes ul li::before { content: ''; position: absolute; top: 5px; left: 0; background-image: url(images/sprite.png); background-position: -342px -257px; width: 19px; height: 19px; }
 
 .company-about__themes ul li:last-child { padding: 0; }
 
@@ -574,19 +578,19 @@ The `sprites` mixin generates identical output to the CSS template
 
 .company-about__experts-arrow-left { position: absolute; top: 0; left: 0; height: 100%; width: 78px; cursor: pointer; }
 
-.company-about__experts-arrow-left::before { content: ''; position: absolute; top: 50%; left: 50%; margin: -27px 0 0 -15px; background-image: url(images/sprite.png); background-position: -363px -69px; width: 30px; height: 55px; }
+.company-about__experts-arrow-left::before { content: ''; position: absolute; top: 50%; left: 50%; margin: -27px 0 0 -15px; background-image: url(images/sprite.png); background-position: -363px -234px; width: 30px; height: 55px; }
 
 .company-about__experts-arrow-left:hover, .company-about__experts-arrow-left:focus { background: #eaf3f9; }
 
-.company-about__experts-arrow-left:hover::before, .company-about__experts-arrow-left:focus::before { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.company-about__experts-arrow-left:hover::before, .company-about__experts-arrow-left:focus::before { background-image: url(images/sprite.png); background-position: -363px -69px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .company-about__experts-arrow-right { position: absolute; top: 0; right: 0; height: 100%; width: 78px; cursor: pointer; }
 
-.company-about__experts-arrow-right::before { content: ''; position: absolute; top: 50%; right: 50%; margin: -27px -15px 0 0; background-image: url(images/sprite.png); background-position: -363px -69px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.company-about__experts-arrow-right::before { content: ''; position: absolute; top: 50%; right: 50%; margin: -27px -15px 0 0; background-image: url(images/sprite.png); background-position: -363px -234px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .company-about__experts-arrow-right:hover, .company-about__experts-arrow-right:focus { background: #eaf3f9; }
 
-.company-about__experts-arrow-right:hover::before, .company-about__experts-arrow-right:focus::before { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
+.company-about__experts-arrow-right:hover::before, .company-about__experts-arrow-right:focus::before { background-image: url(images/sprite.png); background-position: -363px -69px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
 
 /*end of company-about*/
 /*coaching-page*/
@@ -796,17 +800,25 @@ The `sprites` mixin generates identical output to the CSS template
 
 .trainings-unit__info p { margin: 20px 0 40px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.trainings-unit__info ul { margin: 20px 0 40px; background: url("images/trainings-unit__info-list.png") no-repeat center top; min-height: 187px; position: relative; }
+.trainings-unit__info ul { margin: 20px 0 40px; padding: 7px 0 0; position: relative; }
 
-.trainings-unit__info ul li { margin: 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 21px; line-height: 1.2em; font-weight: 400; color: #519dcf; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.trainings-unit__info ul::after { clear: both; display: table; content: ''; }
 
-.trainings-unit__info ul li:first-child { position: absolute; top: 8px; right: 50%; margin: 0 80px 0 0; }
+.trainings-unit__info ul li { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 21px; line-height: 1.2em; font-weight: 400; color: #519dcf; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.trainings-unit__info ul li:nth-child(2) { position: absolute; top: 52px; left: 50%; margin: 0 0 0 80px; }
+.trainings-unit__info ul li:nth-child(2n+1) { float: right; clear: both; margin: 0 50% 0 0; padding: 0 5% 20px 0; position: relative; }
 
-.trainings-unit__info ul li:nth-child(3) { position: absolute; top: 96px; right: 50%; margin: 0 80px 0 0; }
+.trainings-unit__info ul li:nth-child(2n+1)::before { content: ''; position: absolute; top: -9px; right: -1px; background-image: url(images/sprite.png); background-position: -318px -257px; width: 24px; height: 31px; }
 
-.trainings-unit__info ul li:last-child { position: absolute; top: 145px; left: 50%; margin: 0 0 0 80px; }
+.trainings-unit__info ul li:nth-child(2n+1)::after { content: ''; position: absolute; top: 0; right: -1px; height: 51px; border-right: 2px solid #519dcf; }
+
+.trainings-unit__info ul li:nth-child(2n) { float: left; clear: both; margin: 0 0 0 50%; padding: 0 0 20px 5%; position: relative; }
+
+.trainings-unit__info ul li:nth-child(2n)::before { content: ''; position: absolute; top: -9px; left: -1px; background-image: url(images/sprite.png); background-position: -272px -124px; width: 24px; height: 31px; }
+
+.trainings-unit__info ul li:nth-child(2n)::after { content: ''; position: absolute; top: 0; left: -1px; height: 51px; border-right: 2px solid #519dcf; }
+
+.trainings-unit__info ul li:last-child { margin-bottom: 0; }
 
 /*end of trainings-unit*/
 /*business-cases-page*/
@@ -868,11 +880,11 @@ The `sprites` mixin generates identical output to the CSS template
 
 .edu-page__articles-left { position: absolute; top: 50%; left: 40px; margin: -27px 0 0 -15px; cursor: pointer; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; }
 
-.edu-page__articles-left:hover, .edu-page__articles-left:focus { background-image: url(images/sprite.png); background-position: -363px -234px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.edu-page__articles-left:hover, .edu-page__articles-left:focus { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .edu-page__articles-right { position: absolute; top: 50%; right: 40px; margin: -27px -15px 0 0; cursor: pointer; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.edu-page__articles-right:hover, .edu-page__articles-right:focus { background-image: url(images/sprite.png); background-position: -363px -234px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
+.edu-page__articles-right:hover, .edu-page__articles-right:focus { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
 
 .edu-page__books { margin: 0 -80px; padding: 40px 80px 60px; background: #4cb050; }
 
@@ -892,10 +904,48 @@ The `sprites` mixin generates identical output to the CSS template
 
 .edu-page__books-list-left { position: absolute; top: 50%; left: 40px; margin: -27px 0 0 -15px; cursor: pointer; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; }
 
-.edu-page__books-list-left:hover, .edu-page__books-list-left:focus { background-image: url(images/sprite.png); background-position: -363px -234px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.edu-page__books-list-left:hover, .edu-page__books-list-left:focus { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .edu-page__books-list-right { position: absolute; top: 50%; right: 40px; margin: -27px -15px 0 0; cursor: pointer; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.edu-page__books-list-right:hover, .edu-page__books-list-right:focus { background-image: url(images/sprite.png); background-position: -363px -234px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
+.edu-page__books-list-right:hover, .edu-page__books-list-right:focus { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
 
 /*end of edu-page*/
+/*business-cases-unit*/
+.business-cases-unit .container { padding: 80px 80px 0; box-sizing: border-box; }
+
+.business-cases-unit h2 { margin: 0 0 50px; }
+
+.business-cases-unit__nav { margin: 0 50px 50px 0; float: left; padding: 130px 0 0; box-sizing: border-box; min-width: 573px; min-height: 574px; background: url("images/square.png") no-repeat center top; text-align: center; }
+
+.business-cases-unit__nav li { margin: 0 0 125px; }
+
+.business-cases-unit__nav li.active a { color: #000; }
+
+.business-cases-unit__nav li a { display: inline-block; vertical-align: top; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+
+.business-cases-unit__nav li a:hover, .business-cases-unit__nav li a:focus { text-decoration: underline; }
+
+.business-cases-unit__nav li:nth-child(2) { float: left; width: 50%; }
+
+.business-cases-unit__nav li:nth-child(3) { float: right; width: 50%; }
+
+.business-cases-unit__nav li:last-child { clear: both; }
+
+.business-cases-unit__content { margin: 0 0 50px; }
+
+.business-cases-unit__content h3 { margin: 0 0 20px; }
+
+.business-cases-unit__content p { margin: 0 0 20px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.business-cases-unit__content ul li { margin: 0 0 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.business-cases-unit__footer { clear: both; }
+
+.business-cases-unit__footer p { margin: 0 0 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.business-cases-unit__footer p a { color: #616161; text-decoration: underline; }
+
+.business-cases-unit__footer h3 { margin: 0 0 20px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 36px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+
+/*end of business-cases-unit*/

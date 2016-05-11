@@ -1,0 +1,128 @@
+doctype html
+html
+	head
+		title «AmRest»
+		meta(charset="UTF-8")
+		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+		link(rel='stylesheet', type='text/css', href='style.css')
+	body
+		//HEADER
+		header.header.header--blue
+			div.container.clearfix
+				div.header__application
+					a(href='#') Отправить заявку
+				div.logo
+					img(src='images/logo.jpg' alt='logo')
+				nav.header__nav
+					ul
+						li
+							a(href='#') О нас
+						li
+							a(href='#') Бизнес кейсы
+						li
+							a(href='#') Тренинги
+						li
+							a(href='#') Коучинг
+						li
+							a(href='#') Образование
+						li
+							a(href='#') Обратная связь
+		//end of HEADER
+
+		//BREADCRUMBS
+		div.breadcrumbs
+			div.container
+				ul
+					li
+						a(href='#') Главная
+					li
+						a(href='#') Бизнес кейсы
+					li
+						a Fast Track program
+		//end of BREADCRUMBS
+
+		//CONTENT
+		section.business-cases-unit
+			div.container.clearfix
+				h2.page-title Кейс 1: Интенсивная подготовка топ-менеджеров в условиях развития компании. Fast Track program.
+				ul.business-cases-unit__nav
+					li.active
+						a(href='#') 1. Бизнес-потребность
+					li
+						a(href='#') 2. Проблематика
+					li
+						a(href='#') 3. Решение
+					li
+						a(href='#') 4. Результаты
+				ul.business-cases-unit__content
+					li
+						h3.section-title.section-title--blue 1. Бизнес-потребность
+						p Бизнес увеличивается на треть за один год, открывая новые рестораны в разных городах.
+						p Цель: подготовить лидеров из текущего бизнеса, которые будут выстраивать процессы и культуру в новых городах, где мы оперируем.
+						p Задачи:
+						ul
+							li - определить критерии и выбрать кандидатов с наибольшим потенциалом,
+							li - обучить новой роли,
+							li - адаптировать в короткие сроки,
+							li - усилить команду топ-менеджеров.
+					li
+						h3.section-title.section-title--blue 2. Проблематика
+						p Вопросы, которые стояли перед нами в начале проекта:
+						p Как добиться результатов в короткие сроки (3 месяца)?
+						p Как распространить культуру компании в новых городах?
+						p Как соединить потребности бизнеса с обещаниями компании (корпоративной культурой)?
+						p Как использовать практический подход, чтобы топ-менеджеры смогли следовать процессам компании с первых дней работы?
+					li
+						h3.section-title.section-title--blue 3. Решение
+						p Наши действия в этом проекте:
+						ul
+							li - подготовили теоретическую базу (от критериев отбора до материалов тренингов) ссылка на статью по критериям отбора,
+							li - отобрали кандидатов через процесс интервью по компетенциям,
+							li - совместили теорию, основанную на кейсах, с практикой в реальных ресторанах,
+							li - заселили в 1 дом за городом на 7 недель для более интенсивного взаимодействия и построения команды,
+							li - добавили ежедневный английский,
+							li - наставники занимались с менеджерами для подготовки к аттестации,
+							li - после обучения присоединили менеджеров к действующим на 1 месяц,
+							li - провели аттестацию.
+					li
+						h3.section-title.section-title--blue 4. Результаты
+						p Интервью прошли 11 менеджеров из 25 кандидатов (здесь сделать ссылку на ассессмент центр).
+						p Все прошли аттестацию на английском языке через 3 месяца.
+						p Структура в новых городах была закрыта.
+						p Показатели по продажам улучшились на 15%.
+						p Показатели по аудитам таинственным гостем и на соблюдение операционных стандартов выросли на 20% и 40% соответственно.
+				div.business-cases-unit__footer
+					p Если вы хотите подробнее узнать о наших достижениях, приглашаем вас на наши <a href="#">программы</a>, а также вы можете обратиться за консультацией, подав заявку <a href="#">здесь</a>.
+					h3 Создавай! Вдохновляй! Делай!
+		//end of CONTENT
+
+		//FEEDBACK
+		section.feedback
+			div.container
+				h2.section-title Оформите заявку или задайте вопрос
+				form(action='#' method='get').feedback__form
+					span Выберите тему обращения
+					div.jq-select
+						select(name='feedback__select' id='feedback__select')
+							option(value='1') Записаться  на тренинг
+							option(value='2') Записаться на коучинг
+							option(value='3') Заказать кейс
+							option(value='4') Задать вопрос
+					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+		//end of FEEDBACK
+
+		//FOOTER
+		footer.footer
+			div.container
+				a(href='#').footer__map.more-link Смотреть на карте
+				h2.section-title Как нас найти
+				span.footer__tel +7 (812) 332-83-10
+				p.footer__address Санкт-Петербург, В.О. Средний пр., 36/40, БЦ «Остров», 3 этаж
+				a(href='#').rabotavamrest-link rabotavamrest.ru
+		//end of FOOTER
+
+		//SCRIPTS
+		script(src='js/jquery-2.2.3.min.js')
+		script(src='js/jquery.formstyler.min.js')
+		script(src='js/script.js')
+		//end of SCRIPTS

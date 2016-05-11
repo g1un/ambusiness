@@ -258,12 +258,18 @@
 
 		ul{
 			margin: 20px 0 40px;
-			background: url("images/trainings-unit__info-list.png") no-repeat center top;
-			min-height: 187px;
+			padding: 7px 0 0;
+			//background: url("images/trainings-unit__info-list.png") no-repeat center top;
+			//min-height: 187px;
 			position: relative;
 
+			&::after{
+				clear: both;
+				display: table;
+				content: '';
+			}
+
 			li{
-				margin: 10px;
 				font-family: Roboto-Regular, Helvetica, sans-serif;
 				font-size: 21px;
 				line-height: 1.2em;
@@ -274,32 +280,60 @@
 				letter-spacing: 0;
 				text-align: left;
 
-				&:first-child{
-					position: absolute;
-					top: 8px;
-					right: 50%;
-					margin: 0 80px 0 0;
+				&:nth-child(2n+1){
+					float: right;
+					clear: both;
+					margin: 0 50% 0 0;
+					padding: 0 5% 20px 0;
+					position: relative;
+
+					&::before{
+						content: '';
+						position: absolute;
+						top: -9px;
+						right: -1px;
+
+						@include sprite($list-arrow-left);
+					}
+
+					&::after{
+						content: '';
+						position: absolute;
+						top: 0;
+						right: -1px;
+						height: 51px;
+						border-right: 2px solid #519dcf;
+					}
 				}
 
-				&:nth-child(2){
-					position: absolute;
-					top: 52px;
-					left: 50%;
-					margin: 0 0 0 80px;
-				}
+				&:nth-child(2n){
+					float: left;
+					clear: both;
+					margin: 0 0 0 50%;
+					padding: 0 0 20px 5%;
+					position: relative;
 
-				&:nth-child(3){
-					position: absolute;
-					top: 96px;
-					right: 50%;
-					margin: 0 80px 0 0;
+					&::before{
+						content: '';
+						position: absolute;
+						top: -9px;
+						left: -1px;
+
+						@include sprite($list-arrow-right);
+					}
+
+					&::after{
+						content: '';
+						position: absolute;
+						top: 0;
+						left: -1px;
+						height: 51px;
+						border-right: 2px solid #519dcf;
+					}
 				}
 
 				&:last-child{
-					position: absolute;
-					top: 145px;
-					left: 50%;
-					margin: 0 0 0 80px;
+					margin-bottom: 0;
 				}
 			}
 		}

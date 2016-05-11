@@ -255,5 +255,40 @@ $(document).ready(function(){
 	//	});
 	//}
 	///*end of slider*/
+
+	/*business-cases-unit list*/
+	if($('.business-cases-unit').length){
+		var nav = $('.business-cases-unit__nav>li');
+		var content = $('.business-cases-unit__content>li');
+
+		content.hide();
+		nav.each(function(){
+			if($(this).hasClass('active')){
+				content.eq($(this).index()).show();
+			}
+		});
+
+		nav.on('click', function (e) {
+			e.preventDefault();
+			nav.removeClass('active');
+			$(this).addClass('active');
+			content.hide();
+			content.eq($(this).index()).show();
+		});
+	}
+	/*end of business-cases-unit list*/
+
+	/*header__application link */
+	if($('.header__application a').length){
+		var apply = $('.header__application a, .trainings__apply, .training-page__slider ul li .text a, .coaching-page__specialists a, .company-about__experts .button, .company-about__themes .button, .trainings-unit__header .button');
+		var feedbackTop = $('.feedback').offset().top;
+
+		apply.on('click', function(e){
+			e.preventDefault();
+			console.log(feedbackTop);
+			$('html, body').animate({scrollTop: feedbackTop}, 750);
+		});
+	}
+	/*end of header__application link*/
 });
 /*end of SCRIPT.JS*/
