@@ -130,89 +130,172 @@
 			}
 		}
 	}
+	
+	&__program{
+		
+		.container{
+			padding: 40px 80px;
+			box-sizing: border-box;
+			background: #4cb050;
+		}
 
-	&__slider{
+		p,
+		ul li{
+			margin: 15px 0;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+	}
+
+	&__trainer{
 
 		.container{
-			padding: 50px 80px 10px;
+			padding: 40px 80px 40px;
 			box-sizing: border-box;
 			background: #519dcf;
 		}
 
-		&-list{
-			margin: 0 auto;
-			width: 60%;
-			font-size: 0;
+		&--galina-filon{
 
-			li{
-				display: inline-block;
-				vertical-align: top;
-				width: 100%;
-				position: relative;
-
-				img{
-					max-width: 100%;
-				}
-
-				p{
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					padding: 20px;
-					box-sizing: border-box;
-					background: rgba(40, 62, 119, 0.47);
-					font-family: Roboto-Regular, Helvetica, sans-serif;
-					font-size: 18px;
-					line-height: 1.5em;
-					font-weight: 400;
-					color: #fff;
-					text-transform: none;
-					text-decoration: none;
-					letter-spacing: 0;
-					text-align: left;
-				}
+			.container{
+				background: #519dcf url('images/photos/galina-filon-bg.png') no-repeat top right;
 			}
 		}
 
-		&-dots{
-			margin: 20px auto;
-			font-size: 0;
-			text-align: center;
+		&--alena-golohvastova{
 
-			li{
-				margin: 0 5px;
-				display: inline-block;
-				vertical-align: top;
-				width: 28px;
-				height: 28px;
-				border-radius: 50%;
-				background: #fff;
-				box-shadow: inset 0 5px 5px 0 rgba(0,0,0,.25);
-				cursor: pointer;
-
-				&.slick-active{
-					position: relative;
-
-					&::after{
-						content: '';
-						position: absolute;
-						top: 7px;
-						left: 7px;
-						border-radius: 50%;
-						width: 14px;
-						height: 14px;
-						background: #519dcf;
-						box-shadow: inset 0 5px 5px 0 rgba(0,0,0,.25);
-					}
-				}
-
-				button{
-					display: none;
-				}
+			.container{
+				background: #519dcf url('images/photos/alena-golohvastova-bg.png') no-repeat 98% 20px/300px;
 			}
+		}
+
+		h2{
+			margin: 0 0 40px;
+		}
+
+		span{
+			margin: 0 0 30px;
+			display: block;
+			font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 24px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		p,
+		ul li{
+			margin: 0 0 5px;
+			display: block;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+		}
+
+		ul{
+			margin: 0 0 35px;
 		}
 	}
+
+	//&__slider{
+	//
+	//	.container{
+	//		padding: 50px 80px 10px;
+	//		box-sizing: border-box;
+	//		background: #519dcf;
+	//	}
+	//
+	//	&-list{
+	//		margin: 0 auto;
+	//		width: 60%;
+	//		font-size: 0;
+	//
+	//		li{
+	//			display: inline-block;
+	//			vertical-align: top;
+	//			width: 100%;
+	//			position: relative;
+	//
+	//			img{
+	//				max-width: 100%;
+	//			}
+	//
+	//			p{
+	//				position: absolute;
+	//				bottom: 0;
+	//				left: 0;
+	//				right: 0;
+	//				padding: 20px;
+	//				box-sizing: border-box;
+	//				background: rgba(40, 62, 119, 0.47);
+	//				font-family: Roboto-Regular, Helvetica, sans-serif;
+	//				font-size: 18px;
+	//				line-height: 1.5em;
+	//				font-weight: 400;
+	//				color: #fff;
+	//				text-transform: none;
+	//				text-decoration: none;
+	//				letter-spacing: 0;
+	//				text-align: left;
+	//			}
+	//		}
+	//	}
+	//
+	//	&-dots{
+	//		margin: 20px auto;
+	//		font-size: 0;
+	//		text-align: center;
+	//
+	//		li{
+	//			margin: 0 5px;
+	//			display: inline-block;
+	//			vertical-align: top;
+	//			width: 28px;
+	//			height: 28px;
+	//			border-radius: 50%;
+	//			background: #fff;
+	//			box-shadow: inset 0 5px 5px 0 rgba(0,0,0,.25);
+	//			cursor: pointer;
+	//
+	//			&.slick-active{
+	//				position: relative;
+	//
+	//				&::after{
+	//					content: '';
+	//					position: absolute;
+	//					top: 7px;
+	//					left: 7px;
+	//					border-radius: 50%;
+	//					width: 14px;
+	//					height: 14px;
+	//					background: #519dcf;
+	//					box-shadow: inset 0 5px 5px 0 rgba(0,0,0,.25);
+	//				}
+	//			}
+	//
+	//			button{
+	//				display: none;
+	//			}
+	//		}
+	//	}
+	//}
 
 	&__info{
 		text-align: center;
@@ -233,14 +316,14 @@
 		h4{
 			margin: 10px 0;
 			font-family: Roboto-Bold, Helvetica, sans-serif;
-			font-size: 18px;
+			font-size: 36px;
 			line-height: 1.2em;
 			font-weight: 400;
-			color: #616161;
-			text-transform: none;
+			color: #283e77;
+			text-transform: uppercase;
 			text-decoration: none;
 			letter-spacing: 0;
-			text-align: left;
+			text-align: center;
 		}
 
 		p{
@@ -254,6 +337,10 @@
 			text-decoration: none;
 			letter-spacing: 0;
 			text-align: left;
+
+			&:not(:first-child){
+				text-align: center;
+			}
 		}
 
 		ul{

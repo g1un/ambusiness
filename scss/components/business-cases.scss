@@ -54,6 +54,17 @@
 				text-transform: uppercase;
 				text-decoration: none;
 				letter-spacing: 0;
+
+				a{
+					display: block;
+					color: #4cb050;
+					text-decoration: none;
+
+					&:hover,
+					&:focus{
+						text-decoration: underline;
+					}
+				}
 			}
 
 			p{
@@ -68,7 +79,7 @@
 				letter-spacing: 0;
 			}
 
-			a{
+			&>a{
 				margin: 0;
 				display: block;
 				float: right;

@@ -1,8 +1,131 @@
 /*SCRIP.JS*/
 $(document).ready(function(){
+
+	if($('.fb').length){
+		$('.fb').fancybox();
+	}
+
+	if($('.feedback .button.fb').length){
+		var fbButton = $('.feedback .button.fb');
+		var fbFormTitle = $('.feedback-form h2');
+
+		fbButton.on('click', function(){
+			var fbTitleText = $('.jq-select option:selected').text();
+			fbFormTitle.text(fbTitleText);
+		});
+	}
+
 	/*formstyler*/
 	$('.jq-select select').styler();
 	/*end of formstyler*/
+
+	/*edu sliders*/
+	if($('.edu__slider--books ul').length){
+		$('.edu__slider--books ul').slick({
+			prevArrow: $('.edu__slider--books .edu__arrow-left'),
+			nextArrow: $('.edu__slider--books .edu__arrow-right'),
+			adaptiveHeight: true
+		});
+	}
+
+	if($('.edu__slider--articles ul').length){
+		$('.edu__slider--articles ul').slick({
+			prevArrow: $('.edu__slider--articles .edu__arrow-left'),
+			nextArrow: $('.edu__slider--articles .edu__arrow-right'),
+			adaptiveHeight: true,
+			slidesToShow: 3
+		});
+	}
+	/*end of edu sliders*/
+
+	/*books-articles lists on main page*/
+	if($('.edu').length){
+		var eduNav = $('.edu__nav>li');
+		var eduContent = $("div[class*='edu__slider']");
+
+		eduContent.hide();
+		eduNav.each(function(){
+			if($(this).hasClass('active')){
+				eduContent.eq($(this).index()).show();
+			}
+		});
+
+		eduNav.on('click', function (e) {
+			e.preventDefault();
+			eduNav.removeClass('active');
+			$(this).addClass('active');
+			eduContent.hide();
+			eduContent.eq($(this).index()).show();
+
+			$('.edu__slider--books ul').slick('unslick');
+			$('.edu__slider--books ul').slick({
+				prevArrow: $('.edu__slider--books .edu__arrow-left'),
+				nextArrow: $('.edu__slider--books .edu__arrow-right'),
+				adaptiveHeight: true
+			});
+
+			$('.edu__slider--articles ul').slick('unslick');
+			$('.edu__slider--articles ul').slick({
+				prevArrow: $('.edu-page__articles-left'),
+				nextArrow: $('.edu-page__articles-right'),
+				adaptiveHeight: true,
+				slidesToShow: 3
+			});
+		});
+	}
+	/*end of books-articles lists on main page*/
+
+	/*header__application link */
+	if($('.header__application a').length){
+		var apply = $('.header__application a, .trainings__apply, .training-page__slider ul li .text a, .coaching-page__specialists a, .company-about__experts .button, .company-about__themes .button, .trainings-unit__header .button, .business-cases-unit__footer .apply');
+		var feedbackTop = $('.feedback').offset().top;
+
+		apply.on('click', function(e){
+			e.preventDefault();
+			console.log(feedbackTop);
+			$('html, body').animate({scrollTop: feedbackTop}, 750);
+		});
+	}
+	/*end of header__application link*/
+
+	/*coaching-page__info experts link */
+	if($('.coaching-page__info .experts').length){
+		var expertsLink = $('.coaching-page__info .experts');
+		var expertsTop = $('.coaching-page__specialists').offset().top;
+
+		expertsLink.on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({scrollTop: expertsTop}, 750);
+		});
+	}
+	/*end of coaching-page__info experts link*/
+
+	/*company-about__students-link experts link */
+	if($('.company-about__students-link').length){
+		var studentsToExpertsLink = $('.company-about__students-link');
+		var studentsToExpertsPosition = $('.company-about #experts').offset().top;
+
+		studentsToExpertsLink.on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({scrollTop: studentsToExpertsPosition}, 500);
+
+			setTimeout(function(){
+				$('.company-about__nav li').removeClass('active');
+				$('#experts').addClass('active');
+				showHide();
+
+				$('.company-about__experts-slider ul').slick('unslick');
+				$('.company-about__experts-slider ul').slick({
+					prevArrow: $('.company-about__experts-arrow-left'),
+					nextArrow: $('.company-about__experts-arrow-right'),
+					adaptiveHeight: true,
+					infinite: false,
+					slidesToShow: 4
+				});
+			}, 501);
+		});
+	}
+	/*end of company-about__students-link experts link*/
 
 	/*image in select for feedback block*/
 	if($('.feedback .jq-select').length){
@@ -19,17 +142,6 @@ $(document).ready(function(){
 		});
 	}
 	/*end of image in select for feedback block*/
-
-	/*slick&owl-carousel*/
-	//if($('.jq-slider ul').length){
-	//	$('.jq-slider ul').owlCarousel({
-	//		items: 4,
-	//		margin: 5,
-	//		loop: false,
-	//		nav: true,
-	//		navText: ['<div class="company-about__experts-arrow-left jq-slider__left"></div>', '<div class="company-about__experts-arrow-right jq-slider__right"></div>']
-	//	});
-	//}
 
 	if($('.company-about__experts-slider ul').length){
 		$('.company-about__experts-slider ul').slick({
@@ -49,20 +161,13 @@ $(document).ready(function(){
 		});
 	}
 
-	if($('.edu__slider ul').length){
-		$('.edu__slider ul').slick({
-			prevArrow: $('.edu__arrow-left'),
-			nextArrow: $('.edu__arrow-right'),
-			adaptiveHeight: true
-		});
-	}
-
 	/*training-page__slider*/
 	if($('.training-page__slider ul').length){
 		$('.training-page__slider ul').slick({
 			autoplay: true,
-			arrows: false,
-			autoplaySpeed: 5000
+			autoplaySpeed: 5000,
+			prevArrow: $('.training-page__arrow-left'),
+			nextArrow: $('.training-page__arrow-right')
 		});
 	}
 	/*end of training-page__slider*/
@@ -82,7 +187,7 @@ $(document).ready(function(){
 	/*end of trainings-unit__slider*/
 
 	/*.edu-page__articles*/
-	if($('.edu-page__articles ul').length){
+	if($('.edu-page:not(.edu-page--all).edu-page__articles ul').length){
 		$('.edu-page__articles ul').slick({
 			prevArrow: $('.edu-page__articles-left'),
 			nextArrow: $('.edu-page__articles-right'),
@@ -93,7 +198,7 @@ $(document).ready(function(){
 	/*end of .edu-page__articles*/
 
 	/*.edu-page__books-list*/
-	if($('.edu-page__books-list ul').length){
+	if($('.edu-page:not(.edu-page--all).edu-page__books-list ul').length){
 		$('.edu-page__books-list ul').slick({
 			prevArrow: $('.edu-page__books-list-left'),
 			nextArrow: $('.edu-page__books-list-right'),
@@ -103,60 +208,53 @@ $(document).ready(function(){
 	}
 	/*end of .edu-page__books-list*/
 
-	/*end of slick&owl-carousel*/
-
 	if($('.company-about__experts-slider').length){
 
-		/*company-about__experts-arrow height*/
-		//var slide = $('.company-about__experts-slider li');
-		//
-		//function sliderHeight(){
-		//	var minHeight = 9999;
-		//	var i = 0;
-		//
-		//	slide.each(function(){
-		//		if($(this).outerHeight() < minHeight){
-		//			minHeight = $(this).outerHeight();
-		//		}
-		//		$('.company-about__experts-arrow-left, .company-about__experts-arrow-right').css('height', minHeight);
-		//	});
-		//}
-		//
-		//setTimeout(function () {
-		//	sliderHeight();
-		//}, 50);
-		//
-		//$(window).resize(function(){
-		//	setTimeout(function () {
-		//		sliderHeight();
-		//	}, 50);
-		//});
-		/*end of company-about__experts-arrow height*/
-
 		/*text characters limitation in company-about__experts-slider*/
-		var slideText = $('.company-about__experts-slider li p');
-		var letterLimit = 150;
-		var slideTextShow = $('.company-about__experts-slider li b');
-		var slideTextHide = $('.company-about__experts-slider li i');
+		var expertsItem = $('.company-about__experts-slider li');
+		var expertsTextShow = $('.company-about__experts-slider ul b');
+		var expertsTextHide = $('.company-about__experts-slider li i');
 
-		slideText.each(function(){
-			var letterNumber = $(this).text().length;
-			if(letterNumber > letterLimit){
-				$("<p class='hidden'>"+$(this).text().trim()+"</p>").insertAfter($(this));
-				$(this).text($(this).text().trim().substring(0, letterLimit)+'...');
-			}
+		expertsTextShow.hide();
+		expertsTextHide.hide();
+
+		expertsTextShow.on('click', function () {
+			$(this).parent().children('.text').hide();
+			$(this).parent().children('.hidden').show();
+			$(this).hide();
+			$(this).next('i').show();
 		});
 
-		slideTextShow.on('click', function(){
-			$(this).toggle();
-			$(this).parent().find('i').toggleClass('show');
-			$(this).parent().find('p').toggleClass('hidden');
+		expertsTextHide.on('click', function () {
+			$(this).parent().children('.text').show();
+			$(this).parent().children('.hidden').hide();
+			$(this).hide();
+			$(this).prev('b').show();
 		});
 
-		slideTextHide.on('click', function(){
-			$(this).toggleClass('show');
-			$(this).parent().find('b').toggle();
-			$(this).parent().find('p').toggleClass('hidden');
+		expertsItem.each(function(){
+			var expertsTextCount = 0;
+			var expertsText = $(this).children('div.text').children('p');
+			console.log($(this).children('div.text').children('p'));
+
+			expertsText.each(function(){
+				expertsTextCount += $(this).text().length;
+				if(expertsTextCount > 150){
+					$(this).parent().next('b').show();
+
+					$(this).parent().clone().insertAfter($(this).parent()).addClass('hidden');
+
+					var prevLength  = $(this).prevAll('p').text().length;
+
+					var remainingChunk =
+							$(this).text().substring(0, 150 - prevLength);
+					$(this).text(remainingChunk + '...');
+
+					$(this).nextAll('p').empty();
+
+					return false;
+				}
+			});
 		});
 		/*end of text height limitation in company-about__experts-slider*/
 	}
@@ -185,7 +283,6 @@ $(document).ready(function(){
 			$(this).addClass('active');
 
 			showHide();
-			//sliderHeight();
 
 			$('.company-about__experts-slider ul').slick('unslick');
 
@@ -198,63 +295,16 @@ $(document).ready(function(){
 			});
 
 		});
+
+		if($('li:target').length){
+			console.log($('li:target'));
+			companyAboutBtn.removeClass('active');
+			$('li:target').addClass('active');
+
+			showHide();
+		}
 	}
 	/*end of company-about__nav*/
-
-	///*owl-carousel*/
-	//$(".professionals__slider ul").owlCarousel({
-	//	loop: true,
-	//	nav: true,
-	//	items: 1,
-	//});
-	///*end of owl-carousel*/
-
-	///*slider*/
-	//if($('.professionals__slider ul li').length >= 2){
-	//	var slide = $('.professionals__slider ul li');
-	//	var slider = $('.professionals__slider ul');
-	//	var sliderLeft = $('.professionals__arrow-left');
-	//	var sliderRight = $('.professionals__arrow-right');
-	//
-	//	function sliderPositioning(){
-	//		var sliderWidth = slider.outerWidth();
-	//		var i = 0;
-	//
-	//		slide.each(function(){
-	//			$(this).css({
-	//				'display': 'block',
-	//				'position': 'absolute',
-	//				'top': 0,
-	//				'left': i*sliderWidth+'px',
-	//				'width': sliderWidth
-	//			});
-	//
-	//			i++;
-	//
-	//			if(i == slide.length){
-	//				if(slide.css('left') == 0 || slide.css('left') == '0px'){
-	//					slider.css('height', slide.outerHeight());
-	//				}else{
-	//					console.log(slide.css('error'));
-	//				}
-	//			}
-	//		});
-	//	}
-	//
-	//	sliderPositioning();
-	//
-	//	$(window).resize(function() {
-	//		sliderPositioning();
-	//	});
-	//
-	//	sliderLeft.on('click', function(){
-	//		var sliderWidth = slider.outerWidth();
-	//		if(slide.css('left') == -sliderWidth){
-	//
-	//		}
-	//	});
-	//}
-	///*end of slider*/
 
 	/*business-cases-unit list*/
 	if($('.business-cases-unit').length){
@@ -277,18 +327,5 @@ $(document).ready(function(){
 		});
 	}
 	/*end of business-cases-unit list*/
-
-	/*header__application link */
-	if($('.header__application a').length){
-		var apply = $('.header__application a, .trainings__apply, .training-page__slider ul li .text a, .coaching-page__specialists a, .company-about__experts .button, .company-about__themes .button, .trainings-unit__header .button');
-		var feedbackTop = $('.feedback').offset().top;
-
-		apply.on('click', function(e){
-			e.preventDefault();
-			console.log(feedbackTop);
-			$('html, body').animate({scrollTop: feedbackTop}, 750);
-		});
-	}
-	/*end of header__application link*/
 });
 /*end of SCRIPT.JS*/

@@ -62,5 +62,23 @@
 			}
 		}
 	}
+
+	p{
+		margin: 0 80px 8px;
+		font-family: Roboto-Regular, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.5em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: left;
+	}
+
+	.fon{
+		background: rgba(106, 220, 144, 0.3);
+		padding: 20px;
+	}
 }
 /*end of coaching*/

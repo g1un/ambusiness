@@ -5,6 +5,7 @@ html
 		meta(charset="UTF-8")
 		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
 		link(rel='stylesheet', type='text/css', href='css/slick.css')
+		link(rel='stylesheet', type='text/css', href='js/fancybox/jquery.fancybox.css')
 		link(rel='stylesheet', type='text/css', href='style.css')
 	body
 		//HEADER
@@ -57,41 +58,64 @@ html
 								p Превосходная возможность усилить свое лидерство, использовать самые передовые подходы и эффективно решать бизнес-задачи с командой с помощью кейс-школы ABS
 								a(href='#').button Зарегистрироваться
 
-		section.trainings-unit__slider
+		//section.trainings-unit__slider
+		//	div.container
+		//		ul.trainings-unit__slider-list
+		//			li
+		//				img(src='images/photos/IMG_3900.JPG' alt='IMG_3900.JPG')
+		//				p 1. Разработка индивидуального плана улучшения для каждого участника
+		//			li
+		//				img(src='images/photos/IMG_3962.JPG' alt='IMG_3962.JPG')
+		//				p 2. Практика самопрезентации и эффективной коммуникации
+		//			li
+		//				img(src='images/photos/IMG_4022.JPG' alt='IMG_4022.JPG')
+		//				p 3. Построение доверия в команде как основа для продуктивных отношений
+		//			li
+		//				img(src='images/photos/IMG_5527.jpg' alt='IMG_5527.jpg')
+		//				p 4. Использование самых действенных методов в индивидуальном подходе к сотрудникам
+		//			li
+		//				img(src='images/photos/IMG_5540.jpg' alt='IMG_5540.jpg')
+		//				p 5. Кейсы AmRest и других российских компаний, а также разбор ваших кейсов
+
+		section.trainings-unit__program
 			div.container
-				ul.trainings-unit__slider-list
-					li
-						img(src='images/photos/IMG_3900.JPG' alt='IMG_3900.JPG')
-						p 1. Разработка индивидуального плана улучшения для каждого участника
-					li
-						img(src='images/photos/IMG_3962.JPG' alt='IMG_3962.JPG')
-						p 2. Практика самопрезентации и эффективной коммуникации
-					li
-						img(src='images/photos/IMG_4022.JPG' alt='IMG_4022.JPG')
-						p 3. Построение доверия в команде как основа для продуктивных отношений
-					li
-						img(src='images/photos/IMG_5527.jpg' alt='IMG_5527.jpg')
-						p 4. Использование самых действенных методов в индивидуальном подходе к сотрудникам
-					li
-						img(src='images/photos/IMG_5540.jpg' alt='IMG_5540.jpg')
-						p 5. Кейсы AmRest и других российских компаний, а также разбор ваших кейсов
+				ul
+					li 1. Интерактивный подход и разбор ваших кейсов
+					li 2. Внедрение lean-инициатив на примере AmRest
+					li 3. Продуманная стратегия Сокращения расходов без потери качества
+					li 4. Ведущие эксперты- топ менеджеры AmRest рассказывают о внедренных проектах и результатах
+
+		section.trainings-unit__trainer.trainings-unit__trainer--alena-golohvastova
+			div.container
+				h2.section-title Руководитель тренинга
+				span Оксана Станишевска - бизнес-тренер, Chief Administration Officer
+				p Профессиональный статус:
+				ul
+					li - Специалист в области продаж.
+					li - Опыт проведения бизнес-тренингов и консультирования компаний более 10 лет.
+					li - Автор и ведущая более 30 авторских тренингов по продажам и руководству отделом продаж.
+				p Профессиональная деятельность:
+				ul
+					li - Координация работы Учебного центра.
+					li - Разработка и проведение тренингов по темам: продажи, переговоры, управленческие навыки, коммуникативные навыки.
+					li - Разработка и внедрение стандартов работы.
 
 		section.trainings-unit__info
-			div.container
-				h2.section-title.section-title--blue В чем заключается главная ценность программы:
-				p Вы сможете усилить свое лидерство и повысить реализацию целей вместе с командой
-				h3.section-subtitle Для кого будет интересна эта программа:
-				ul
-					li для начинающих и опытных руководителей
-					li профессионалов
-					li студентов
-					li для всех, кто нацелен на продуктивную работу и хочет действительно изменить реальность к лучшему!
-				h4 Длительность программы:
-				p Два дня (с 10.00 до 19.00) + индивидуальная встреча по движению в течение месяца
-				h4 Ближайшая программа:
-				p 27 августа
-				h4 Тренер
-				p Галина Филон
+					div.container
+						h2.section-title.section-title--blue В чем заключается главная ценность программы:
+						p Вы сможете усилить свое лидерство и повысить реализацию целей вместе с командой
+						h3.section-subtitle Для кого будет интересна эта программа:
+						ul
+							li для начинающих и опытных руководителей
+							li профессионалов
+							li студентов
+							li для всех, кто нацелен на продуктивную работу и хочет действительно изменить реальность к лучшему!
+						h4 Длительность программы:
+						p Два дня (с 10.00 до 19.00) + индивидуальная встреча по движению в течение месяца
+						h4 Ближайшая программа:
+						p 27 августа
+						h4 Тренер
+						p Галина Филон
 
 
 
@@ -124,7 +148,7 @@ html
 							option(value='2') Записаться на коучинг
 							option(value='3') Заказать кейс
 							option(value='4') Задать вопрос
-					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+					a(href='#feedback-form').button.fb Продолжить
 		//end of FEEDBACK
 
 		//FOOTER
@@ -137,9 +161,28 @@ html
 				a(href='#').rabotavamrest-link rabotavamrest.ru
 		//end of FOOTER
 
+		//FORM
+		form(action='#' method='get' id='feedback-form').feedback-form
+			//div.feedback-form__close
+			h2.section-title.section-title--blue Задать вопрос
+			label(for='feedback-form__name') Имя
+			input(type='text' name='feedback-form__name' id='feedback-form__name')
+			<br>
+			label(for='feedback-form__tel') Телефон
+			input(type='text' name='feedback-form__tel' id='feedback-form__tel')
+			<br>
+			label(for='feedback-form__email') E-mail
+			input(type='text' name='feedback-form__email' id='feedback-form__email')
+			<br>
+			h3 Сообщение
+			textarea(name='feedback-form__comment' id='feedback-form__comment')
+			input(type='submit' name='feedback-form__submit' id='feedback-form__submit' value='Отправить').button
+		//end of FORM
+
 		//SCRIPTS
 		script(src='js/jquery-2.2.3.min.js')
 		script(src='js/jquery.formstyler.min.js')
+		script(src='js/fancybox/jquery.fancybox.pack.js')
 		script(src='js/slick.min.js')
 		script(src='js/script.js')
 		//end of SCRIPTS

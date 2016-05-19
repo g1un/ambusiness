@@ -1,0 +1,109 @@
+doctype html
+html
+	head
+		title «AmRest»
+		meta(charset="UTF-8")
+		link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+		link(rel='stylesheet', type='text/css', href='css/owl.carousel.css')
+		link(rel='stylesheet', type='text/css', href='style.css')
+	body
+		//HEADER
+		header.header.header--blue
+			div.container.clearfix
+				div.header__application
+					a(href='#') Отправить заявку
+				div.logo
+					img(src='images/logo.jpg' alt='logo')
+				nav.header__nav
+					ul
+						li
+							a(href='#') О нас
+						li
+							a(href='#') Бизнес кейсы
+						li
+							a(href='#') Тренинги
+						li
+							a(href='#') Коучинг
+						li
+							a(href='#') Образование
+						li
+							a(href='#') Assessment center
+						li
+							a(href='#') Обратная связь
+		//end of HEADER
+
+		//BREADCRUMBS
+		div.breadcrumbs
+			div.container
+				ul
+					li
+						a(href='#') Главная
+					li
+						a Коучинг
+		//end of BREADCRUMBS
+
+		//CONTENT
+
+		section.assessment
+			div.container
+				h2.page-title Assessment center
+				h3.section-title.section-title--blue Что такое центр оценки?
+				p Это один из самых важных элементов процесса внутреннего продвижения в компании по выбору лидеров компании из числа внутренних кандидатов, который позволяет:
+				ul
+					li - определить, каких лидеров вы видите на данной позиции. Какими качествами, характеристиками, поведением они должны обладать?
+					li - определить наилучший для вас метод определения потенциала сотрудника. С нашим методом вы можете познакомиться <a href='http://absschool.ru/trainings/upravlenie-talantami/'>здесь</a>.
+					li - выявить самых сильных кандидатов на лидерскую позицию,
+					li - понять, какие следующие шаги поддержат вашего сотрудника в продвижении,
+					li - узнать лучшие практики AmRest в продвижении сотрудников, где в 2015 году только 5 % менеджеров были набраны извне.
+				h3.section-title.section-title--blue Как проводится центр оценки:
+				ul
+					li 1. Определяются критерии высокопотенциальных кандидатов и компетенции на должность и подготавливаются инструменты оценки
+					li 2. Проводится обучение для наблюдателей с использованием инструментов
+					li 3. Проводится инструктаж с кандидатами о том, что такое центр оценки и как он будет проходить
+					li 4. Организуется сама оценка кандидатов
+					li 5. Подводятся итоги, производится выбор
+					li 6. Всем кандидатам предоставляется обратная связь
+					li 7. Организуется работа с кандидатами после Центра оценки
+				h3.section-title.section-title--blue Подсказки, основанные на опыте  и практике AmRest:
+				ul
+					li - важно определять компетенции с топ менеджерами, а также обратить внимание, как компетенции пересекаются с ценностями компании.
+					li - наиболее эффективно, когда в Центре оценки наблюдателями являются  топ менеджеры компании. Это помогает им оценить качество подготовки сотрудников к продвижению, их потенциал  и видеть своими глазами лучших сотрудников компании, а также самостоятельно принимать решения о продвижении в компании.
+					li - Центр оценки пройдет качественнее, если провести обучение-калибровку для топ менеджмента, чтобы убедиться, что все участники процесса одинаково понимают его.
+					li - для повышения мотивации сотрудников и процесс внутреннего продвижения важно поддерживать на постоянной основе. Так сотрудники будут знать о предоставляемых возможностях и стремиться к карьерному росту, а вместе с этим и показывать лучшие результаты.
+					li - также на мотивацию сотрудников очень влияет «жизнь после Центра оценки», то есть поддержка в развитии, когда сам Центр оценки уже завершен.
+				p Подробнее узнать о центре оценки, а также заказать услугу проведения в вашей компании вы можете узнать у наших экспертов.
+
+
+		//end of CONTENT
+
+		//FEEDBACK
+		section.feedback
+			div.container
+				h2.section-title Оформите заявку или задайте вопрос
+				form(action='#' method='get').feedback__form
+					span Выберите тему обращения
+					div.jq-select
+						select(name='feedback__select' id='feedback__select')
+							option(value='1') Записаться  на тренинг
+							option(value='2') Записаться на коучинг
+							option(value='3') Заказать кейс
+							option(value='4') Задать вопрос
+					input(type='submit' name='feedback__submit' id='feedback__submit' value='Продолжить').button
+		//end of FEEDBACK
+
+		//FOOTER
+		footer.footer
+			div.container
+				a(href='#').footer__map.more-link Смотреть на карте
+				h2.section-title Как нас найти
+				span.footer__tel +7 (812) 332-83-10
+				p.footer__address Санкт-Петербург, В.О. Средний пр., 36/40, БЦ «Остров», 3 этаж
+				a(href='#').rabotavamrest-link rabotavamrest.ru
+		//end of FOOTER
+
+		//SCRIPTS
+		script(src='js/jquery-2.2.3.min.js')
+		script(src='js/jquery.formstyler.min.js')
+		script(src='js/owl.carousel.min.js')
+		script(src='js/script.js')
+		//end of SCRIPTS

@@ -1,0 +1,91 @@
+/*assessment*/
+.assessment{
+
+	.container{
+		padding: 80px 80px 40px;
+		box-sizing: border-box;
+	}
+
+	h2{
+		margin: 0 0 50px;
+	}
+
+	h3{
+		margin: 30px 0;
+	}
+
+	p{
+		margin: 0 0 20px;
+		font-family: Roboto-Regular, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.5em;
+		font-weight: 400;
+		color: #616161;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: left;
+
+		a{
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #fff;
+			text-transform: none;
+			text-decoration: underline;
+			letter-spacing: 0;
+			text-align: left;
+		}
+	}
+
+	ul{
+		margin: 0 0 50px;
+
+		li{
+			margin: 0 0 25px;
+			padding: 0 0 0 35px;
+			font-family: Roboto-Regular, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #616161;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+			position: relative;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include sprite($green-item-check);
+			}
+
+			a{
+				font-family: Roboto-Regular, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.5em;
+				font-weight: 400;
+				color: #616161;
+				text-transform: none;
+				text-decoration: underline;
+				letter-spacing: 0;
+				text-align: left;
+
+				&:hover{
+					color: #616161;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.fon{
+		padding: 20px;
+		background: rgba(106, 220, 144, 0.3);
+	}
+}
+/*end of assessment*/

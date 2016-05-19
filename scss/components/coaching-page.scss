@@ -8,6 +8,15 @@
 			box-sizing: border-box;
 		}
 
+		&-img{
+			float: right;
+			width: 600px;
+
+			img{
+				max-width: 100%;
+			}
+		}
+
 		h2{
 			margin: 0 0 15px;
 			font-family: Roboto-Bold, Helvetica, sans-serif;
@@ -19,6 +28,18 @@
 			text-decoration: none;
 			letter-spacing: 0;
 			text-align: left;
+		}
+
+		h3{
+			margin: 0 0 50px;font-family: Roboto-Bold, Helvetica, sans-serif;
+			font-size: 36px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #283e77;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
 		}
 
 		p{
@@ -43,6 +64,11 @@
 				text-decoration: underline;
 				letter-spacing: 0;
 				text-align: left;
+			}
+
+			&.fon{
+				background: rgba(106, 220, 144, 0.3);
+				padding: 20px;
 			}
 		}
 
@@ -108,7 +134,7 @@
 				vertical-align: top;
 				width: 25%;
 				box-sizing: border-box;
-				min-height: 460px;
+				//min-height: 460px;
 				text-align: left;
 
 				.img{
@@ -139,7 +165,7 @@
 					text-transform: none;
 					text-decoration: none;
 					letter-spacing: 0;
-					text-align: left;
+					text-align: center;
 				}
 
 				span{

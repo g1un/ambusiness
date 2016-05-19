@@ -95,12 +95,12 @@
 		&-text{
 			margin: 0 auto;
 			max-width: 1245px;
-			position: relative;
+			//position: relative;
 
 			li{
-				position: absolute;
-				top: 0;
-				left: 50%;
+				//position: absolute;
+				//top: 0;
+				//left: 50%;
 				font-family: Roboto-Regular, Helvetica, sans-serif;
 				font-size: 18px;
 				line-height: 1.2em;
@@ -111,26 +111,26 @@
 				letter-spacing: 0;
 				text-align: left;
 
-				&:first-child{
-					top: 60px;
-					margin: 0 0 0 140px;
-				}
-
-				&:nth-child(2){
-					top: 215px;
-
-					p{
-						position: absolute;
-						top: 0;
-						right: 145px;
-						margin: 0 0 0 -610px;
-					}
-				}
-
-				&:last-child{
-					top: 360px;
-					margin: 0 0 0 140px;
-				}
+				//&:first-child{
+				//	top: 60px;
+				//	margin: 0 0 0 140px;
+				//}
+				//
+				//&:nth-child(2){
+				//	top: 215px;
+				//
+				//	p{
+				//		position: absolute;
+				//		top: 0;
+				//		right: 145px;
+				//		margin: 0 0 0 -610px;
+				//	}
+				//}
+				//
+				//&:last-child{
+				//	top: 360px;
+				//	margin: 0 0 0 140px;
+				//}
 			}
 		}
 
@@ -456,6 +456,14 @@
 						text-align: left;
 					}
 
+					.text{
+
+						&.hidden{
+							display: none;
+						}
+
+					}
+
 					p{
 						margin: 0 15px 15px;
 						font-family: OpenSans-Light, Helvetica, sans-serif;
@@ -467,10 +475,6 @@
 						text-decoration: none;
 						letter-spacing: 0;
 						text-align: left;
-
-						&.hidden{
-							display: none;
-						}
 					}
 
 					b{
@@ -490,7 +494,7 @@
 
 					i{
 						margin: 0 15px 15px;
-						display: none;
+						display: inline-block;
 						font-family: OpenSans-Semibold, Helvetica, sans-serif;
 						font-size: 14px;
 						line-height: 1.2em;
@@ -502,10 +506,6 @@
 						text-align: left;
 						cursor: pointer;
 						font-style: normal;
-
-						&.show{
-							display: block;
-						}
 					}
 				}
 			}

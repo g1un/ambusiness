@@ -53,21 +53,18 @@
 
 			li{
 				margin: 0;
-				//display: inline-block;
-				//vertical-align: top;
-				//width: 16.66%;
 
 				a{
 					margin: 0;
 					display: block;
 					font-family: Roboto-Bold, Helvetica, sans-serif;
-					font-size: 18px;
+					font-size: 16px;
 					line-height: 1.2em;
 					font-weight: 400;
 					color: #fff;
 					text-transform: uppercase;
 					text-decoration: none;
-					letter-spacing: 0;
+					letter-spacing: -.02em;
 					text-align: center;
 
 					&:hover,

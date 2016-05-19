@@ -10,8 +10,32 @@
 		}
 	}
 
+	&__arrow-right{
+		right: -65px;
+		@include sprite($arrow-left);
+		transform: rotate(180deg);
+
+		&:hover,
+		&:focus{
+			@include sprite($arrow-right);
+			transform: none;
+		}
+	}
+
+	&__arrow-left{
+		left: -65px;
+		@include sprite($arrow-left);
+
+		&:hover,
+		&:focus{
+			@include sprite($arrow-right);
+			transform: rotate(180deg);
+		}
+	}
+
 	&__slider{
 		margin: 0 0 50px;
+		position: relative;
 
 		ul{
 			font-size: 0;
@@ -167,7 +191,7 @@
 				vertical-align: top;
 				width: 25%;
 				box-sizing: border-box;
-				min-height: 460px;
+				//min-height: 460px;
 				text-align: left;
 
 				.img{

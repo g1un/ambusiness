@@ -5,6 +5,8 @@ html, body, p, h1, h2, h3, h4, ul { list-style: none; margin: 0; padding: 0; }
 
 .container { margin: 0 auto; min-width: 1260px; max-width: 1920px; }
 
+body .fancybox-skin { background: #fff; }
+
 /*end of general*/
 /*fonts*/
 @font-face { font-family: Roboto-Bold; src: url(fonts/Roboto-Bold.ttf); font-weight: normal; }
@@ -138,7 +140,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .header__nav ul li { margin: 0; }
 
-.header__nav ul li a { margin: 0; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; }
+.header__nav ul li a { margin: 0; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 16px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none; letter-spacing: -.02em; text-align: center; }
 
 .header__nav ul li a:hover, .header__nav ul li a:focus, .header__nav ul li a.selected { text-decoration: underline; }
 
@@ -147,6 +149,40 @@ The `sprites` mixin generates identical output to the CSS template
 .header--blue .header__nav ul li a { color: #212e50; }
 
 /*end of header*/
+/*feedback-form*/
+.feedback-form { display: none; padding: 20px 40px; background: #fff; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25); }
+
+.feedback-form__close { position: absolute; top: -10px; right: -10px; width: 40px; height: 40px; background: #616161; border-radius: 50%; cursor: pointer; }
+
+.feedback-form__close::before { content: ''; position: absolute; top: 4px; left: 17px; width: 5px; height: 32px; border-radius: 3px; background: #fff; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+.feedback-form__close::after { content: ''; position: absolute; top: 4px; left: 17px; width: 5px; height: 32px; border-radius: 3px; background: #fff; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.feedback-form h2 { margin: 0 0 30px; }
+
+.feedback-form label, .feedback-form h3 { margin: 5px 10px 10px 0; display: inline-block; vertical-align: top; min-width: 150px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: right; }
+
+.feedback-form input[type='text'] { margin: 0 0 20px; padding: 5px; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 2px solid #4fc754; outline: none; border-radius: 3px; min-width: 250px; }
+
+.feedback-form input[type='text']::-webkit-input-placeholder { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.feedback-form input[type='text']:-ms-input-placeholder { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.feedback-form input[type='text']::-moz-placeholder { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.feedback-form textarea { margin: 0 0 20px; padding: 5px; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 2px solid #4fc754; outline: none; border-radius: 3px; min-width: 250px; }
+
+.feedback-form textarea::-webkit-input-placeholder { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.feedback-form textarea:-ms-input-placeholder { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.feedback-form textarea::-moz-placeholder { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.feedback-form textarea { margin-bottom: 30px; min-height: 100px; }
+
+.feedback-form .button { margin: 0 auto; display: block; }
+
+/*end of feedback-form*/
 /*logo*/
 .logo { display: block; width: 260px; background: #fff; line-height: 0; }
 
@@ -189,6 +225,8 @@ The `sprites` mixin generates identical output to the CSS template
 .about p { margin: 0 80px 65px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
 .about p b { font-family: Roboto-Bold, Helvetica, sans-serif; font-weight: 400; }
+
+.about p a { color: #000; }
 
 /*end of about*/
 /*professionals*/
@@ -238,9 +276,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .business-cases__list-item h4 { margin: 0 0 25px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 21px; line-height: 1.2em; font-weight: 400; color: #4cb050; text-transform: uppercase; text-decoration: none; letter-spacing: 0; }
 
+.business-cases__list-item h4 a { display: block; color: #4cb050; text-decoration: none; }
+
+.business-cases__list-item h4 a:hover, .business-cases__list-item h4 a:focus { text-decoration: underline; }
+
 .business-cases__list-item p { margin: 0; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; }
 
-.business-cases__list-item a { margin: 0; display: block; float: right; line-height: 0; background-image: url(images/sprite.png); background-position: -363px -322px; width: 29px; height: 18px; }
+.business-cases__list-item > a { margin: 0; display: block; float: right; line-height: 0; background-image: url(images/sprite.png); background-position: -363px -322px; width: 29px; height: 18px; }
 
 .business-cases__list-item--rocket::after { content: ''; position: absolute; top: 30px; left: 38px; background-image: url(images/sprite.png); background-position: 0px -290px; width: 49px; height: 56px; }
 
@@ -298,7 +340,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .edu__arrow-left:hover, .edu__arrow-left:focus { background-image: url(images/sprite.png); background-position: -318px -166px; width: 38px; height: 69px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.edu__slider { margin: 0 20px; padding: 0 60px; position: relative; }
+.edu__slider { margin: 0 20px 20px; padding: 0 60px; position: relative; }
 
 .edu__slider ul { font-size: 0; }
 
@@ -333,6 +375,10 @@ The `sprites` mixin generates identical output to the CSS template
 .coaching ul li { margin: 0 0 20px; padding: 0 0 0 30px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
 
 .coaching ul li::before { content: ''; position: absolute; top: 5px; left: -5px; width: 11px; height: 11px; border-right: 4px solid #4fc754; border-bottom: 4px solid #4fc754; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.coaching p { margin: 0 80px 8px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.coaching .fon { background: rgba(106, 220, 144, 0.3); padding: 20px; }
 
 /*end of coaching*/
 /*feedback*/
@@ -478,17 +524,9 @@ The `sprites` mixin generates identical output to the CSS template
 
 .company-about__honeycomb-list li:last-child { margin: 0 0 0 -17px; top: 376px; }
 
-.company-about__honeycomb-text { margin: 0 auto; max-width: 1245px; position: relative; }
+.company-about__honeycomb-text { margin: 0 auto; max-width: 1245px; }
 
-.company-about__honeycomb-text li { position: absolute; top: 0; left: 50%; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
-
-.company-about__honeycomb-text li:first-child { top: 60px; margin: 0 0 0 140px; }
-
-.company-about__honeycomb-text li:nth-child(2) { top: 215px; }
-
-.company-about__honeycomb-text li:nth-child(2) p { position: absolute; top: 0; right: 145px; margin: 0 0 0 -610px; }
-
-.company-about__honeycomb-text li:last-child { top: 360px; margin: 0 0 0 140px; }
+.company-about__honeycomb-text li { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
 .company-about__honeycomb-img { margin: 0 0 40px; display: inline-block; vertical-align: top; }
 
@@ -566,15 +604,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .company-about__experts-slider ul li span { margin: 0 15px 20px; display: block; font-family: OpenSans-Light, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #b2b2b2; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.company-about__experts-slider ul li p { margin: 0 15px 15px; font-family: OpenSans-Light, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #464646; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.company-about__experts-slider ul li .text.hidden { display: none; }
 
-.company-about__experts-slider ul li p.hidden { display: none; }
+.company-about__experts-slider ul li p { margin: 0 15px 15px; font-family: OpenSans-Light, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #464646; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
 .company-about__experts-slider ul li b { margin: 0 15px 15px; display: inline-block; font-family: OpenSans-Semibold, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #519dcf; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; cursor: pointer; }
 
-.company-about__experts-slider ul li i { margin: 0 15px 15px; display: none; font-family: OpenSans-Semibold, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #959595; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; cursor: pointer; font-style: normal; }
-
-.company-about__experts-slider ul li i.show { display: block; }
+.company-about__experts-slider ul li i { margin: 0 15px 15px; display: inline-block; font-family: OpenSans-Semibold, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #959595; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; cursor: pointer; font-style: normal; }
 
 .company-about__experts-arrow-left { position: absolute; top: 0; left: 0; height: 100%; width: 78px; cursor: pointer; }
 
@@ -596,11 +632,19 @@ The `sprites` mixin generates identical output to the CSS template
 /*coaching-page*/
 .coaching-page__info .container { padding: 80px 80px 0; box-sizing: border-box; }
 
+.coaching-page__info-img { float: right; width: 600px; }
+
+.coaching-page__info-img img { max-width: 100%; }
+
 .coaching-page__info h2 { margin: 0 0 15px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 48px; line-height: 1.2em; font-weight: 400; color: #363636; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.coaching-page__info h3 { margin: 0 0 50px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 36px; line-height: 1.2em; font-weight: 400; color: #283e77; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; }
 
 .coaching-page__info p { margin: 0 0 50px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
 .coaching-page__info p a { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; }
+
+.coaching-page__info p.fon { background: rgba(106, 220, 144, 0.3); padding: 20px; }
 
 .coaching-page__info ul { margin: 0 0 50px; }
 
@@ -616,13 +660,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .coaching-page__specialists ul { margin: 0 0 50px; font-size: 0; text-align: left; }
 
-.coaching-page__specialists ul li { margin: 0; padding: 15px; display: inline-block; vertical-align: top; width: 25%; box-sizing: border-box; min-height: 460px; text-align: left; }
+.coaching-page__specialists ul li { margin: 0; padding: 15px; display: inline-block; vertical-align: top; width: 25%; box-sizing: border-box; text-align: left; }
 
 .coaching-page__specialists ul li .img { margin: 20px auto 20px; padding: 8px; box-sizing: border-box; box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.24); width: 184px; height: 184px; border-radius: 50%; background: #fff; overflow: hidden; line-height: 0; }
 
 .coaching-page__specialists ul li .img img { max-width: 100%; border-radius: 50%; }
 
-.coaching-page__specialists ul li h4 { margin: 0 15px 10px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 21px; line-height: 1.2em; font-weight: 400; color: #283e77; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.coaching-page__specialists ul li h4 { margin: 0 15px 10px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 21px; line-height: 1.2em; font-weight: 400; color: #283e77; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
 
 .coaching-page__specialists ul li span { margin: 0 15px 20px; display: block; font-family: OpenSans-Light, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #363636; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
@@ -640,7 +684,15 @@ The `sprites` mixin generates identical output to the CSS template
 /*training-page*/
 .training-page__promo .container { padding: 65px 80px 0; box-sizing: border-box; background: url("images/trainings-bg-3.jpg") repeat 0 0; }
 
-.training-page__slider { margin: 0 0 50px; }
+.training-page__arrow-right { right: -65px; background-image: url(images/sprite.png); background-position: -318px -83px; width: 45px; height: 83px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.training-page__arrow-right:hover, .training-page__arrow-right:focus { background-image: url(images/sprite.png); background-position: -318px 0px; width: 45px; height: 83px; -webkit-transform: none; transform: none; }
+
+.training-page__arrow-left { left: -65px; background-image: url(images/sprite.png); background-position: -318px -83px; width: 45px; height: 83px; }
+
+.training-page__arrow-left:hover, .training-page__arrow-left:focus { background-image: url(images/sprite.png); background-position: -318px 0px; width: 45px; height: 83px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.training-page__slider { margin: 0 0 50px; position: relative; }
 
 .training-page__slider ul { font-size: 0; }
 
@@ -672,7 +724,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .training-page__specialists ul { font-size: 0; text-align: left; }
 
-.training-page__specialists ul li { margin: 0; padding: 15px; display: inline-block; vertical-align: top; width: 25%; box-sizing: border-box; min-height: 460px; text-align: left; }
+.training-page__specialists ul li { margin: 0; padding: 15px; display: inline-block; vertical-align: top; width: 25%; box-sizing: border-box; text-align: left; }
 
 .training-page__specialists ul li .img { margin: 20px auto 20px; padding: 8px; box-sizing: border-box; box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.24); width: 184px; height: 184px; border-radius: 50%; background: #fff; overflow: hidden; line-height: 0; }
 
@@ -768,25 +820,23 @@ The `sprites` mixin generates identical output to the CSS template
 
 .trainings-unit__header ul li .text a { display: block; position: absolute; bottom: 0; right: 0; }
 
-.trainings-unit__slider .container { padding: 50px 80px 10px; box-sizing: border-box; background: #519dcf; }
+.trainings-unit__program .container { padding: 40px 80px; box-sizing: border-box; background: #4cb050; }
 
-.trainings-unit__slider-list { margin: 0 auto; width: 60%; font-size: 0; }
+.trainings-unit__program p, .trainings-unit__program ul li { margin: 15px 0; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.trainings-unit__slider-list li { display: inline-block; vertical-align: top; width: 100%; position: relative; }
+.trainings-unit__trainer .container { padding: 40px 80px 40px; box-sizing: border-box; background: #519dcf; }
 
-.trainings-unit__slider-list li img { max-width: 100%; }
+.trainings-unit__trainer--galina-filon .container { background: #519dcf url("images/photos/galina-filon-bg.png") no-repeat top right; }
 
-.trainings-unit__slider-list li p { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; box-sizing: border-box; background: rgba(40, 62, 119, 0.47); font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.trainings-unit__trainer--alena-golohvastova .container { background: #519dcf url("images/photos/alena-golohvastova-bg.png") no-repeat 98% 20px/300px; }
 
-.trainings-unit__slider-dots { margin: 20px auto; font-size: 0; text-align: center; }
+.trainings-unit__trainer h2 { margin: 0 0 40px; }
 
-.trainings-unit__slider-dots li { margin: 0 5px; display: inline-block; vertical-align: top; width: 28px; height: 28px; border-radius: 50%; background: #fff; box-shadow: inset 0 5px 5px 0 rgba(0, 0, 0, 0.25); cursor: pointer; }
+.trainings-unit__trainer span { margin: 0 0 30px; display: block; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 24px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.trainings-unit__slider-dots li.slick-active { position: relative; }
+.trainings-unit__trainer p, .trainings-unit__trainer ul li { margin: 0 0 5px; display: block; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.trainings-unit__slider-dots li.slick-active::after { content: ''; position: absolute; top: 7px; left: 7px; border-radius: 50%; width: 14px; height: 14px; background: #519dcf; box-shadow: inset 0 5px 5px 0 rgba(0, 0, 0, 0.25); }
-
-.trainings-unit__slider-dots li button { display: none; }
+.trainings-unit__trainer ul { margin: 0 0 35px; }
 
 .trainings-unit__info { text-align: center; }
 
@@ -796,9 +846,11 @@ The `sprites` mixin generates identical output to the CSS template
 
 .trainings-unit__info h3 { margin: 20px 0; }
 
-.trainings-unit__info h4 { margin: 10px 0; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.trainings-unit__info h4 { margin: 10px 0; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 36px; line-height: 1.2em; font-weight: 400; color: #283e77; text-transform: uppercase; text-decoration: none; letter-spacing: 0; text-align: center; }
 
 .trainings-unit__info p { margin: 20px 0 40px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.trainings-unit__info p:not(:first-child) { text-align: center; }
 
 .trainings-unit__info ul { margin: 20px 0 40px; padding: 7px 0 0; position: relative; }
 
@@ -842,21 +894,19 @@ The `sprites` mixin generates identical output to the CSS template
 
 .business-cases-page__list-item a { margin: 0; display: block; }
 
-.business-cases-page__list-item--rocket::after { content: ''; position: absolute; top: 30px; left: 38px; background-image: url(images/sprite.png); background-position: 0px -290px; width: 49px; height: 56px; }
+.business-cases-page__list-item:nth-child(1)::after { content: ''; position: absolute; top: 30px; left: 38px; background-image: url(images/sprite.png); background-position: 0px -290px; width: 49px; height: 56px; }
 
-.business-cases-page__list-item--communication::after { content: ''; position: absolute; top: 35px; left: 24px; background-image: url(images/sprite.png); background-position: -194px -124px; width: 78px; height: 52px; }
+.business-cases-page__list-item:nth-child(3)::after { content: ''; position: absolute; top: 35px; left: 24px; background-image: url(images/sprite.png); background-position: -194px -124px; width: 78px; height: 52px; }
 
-.business-cases-page__list-item--hr::after { content: ''; position: absolute; top: 30px; left: 32px; background-image: url(images/sprite.png); background-position: -58px -224px; width: 62px; height: 58px; }
+.business-cases-page__list-item:nth-child(2)::after { content: ''; position: absolute; top: 30px; left: 32px; background-image: url(images/sprite.png); background-position: -58px -224px; width: 62px; height: 58px; }
 
-.business-cases-page__list-item--logistic::after { content: ''; position: absolute; top: 39px; left: 35px; background-image: url(images/sprite.png); background-position: -179px -224px; width: 64px; height: 48px; }
-
-.business-cases-page__list-item--arrows::after { content: ''; position: absolute; top: 38px; left: 31px; background-image: url(images/sprite.png); background-position: -194px -176px; width: 66px; height: 48px; }
+.business-cases-page__list-item:nth-child(5)::after { content: ''; position: absolute; top: 38px; left: 31px; background-image: url(images/sprite.png); background-position: -194px -176px; width: 66px; height: 48px; }
 
 .business-cases-page__list-item--money::after { content: ''; position: absolute; top: 36px; left: 33px; background-image: url(images/sprite.png); background-position: -120px -224px; width: 59px; height: 53px; }
 
 .business-cases-page__list-item--chart::after { content: ''; position: absolute; top: 38px; left: 34px; background-image: url(images/sprite.png); background-position: -260px -176px; width: 58px; height: 46px; }
 
-.business-cases-page__list-item--thinking::after { content: ''; position: absolute; top: 28px; left: 31px; background-image: url(images/sprite.png); background-position: 0px -224px; width: 58px; height: 66px; }
+.business-cases-page__list-item:nth-child(4)::after { content: ''; position: absolute; top: 28px; left: 31px; background-image: url(images/sprite.png); background-position: 0px -224px; width: 58px; height: 66px; }
 
 /*end of business-cases-page*/
 /*edu-page*/
@@ -869,6 +919,10 @@ The `sprites` mixin generates identical output to the CSS template
 .edu-page h3 { margin: 0 0 75px; }
 
 .edu-page__articles { margin: 0 -80px 45px; padding: 0 80px; font-size: 0; position: relative; }
+
+.edu-page__articles ul { margin-bottom: 20px; }
+
+.edu-page__articles.edu__slider--articles { margin: 0 20px 20px; padding: 0 60px; }
 
 .edu-page__articles .slick-list { padding: 15px 0; }
 
@@ -886,6 +940,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 .edu-page__articles-right:hover, .edu-page__articles-right:focus { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
 
+.edu-page__articles-all { margin-left: 15px; }
+
 .edu-page__books { margin: 0 -80px; padding: 40px 80px 60px; background: #4cb050; }
 
 .edu-page__books h3 { margin: 0 0 45px; }
@@ -896,7 +952,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .edu-page__books-list li a:hover, .edu-page__books-list li a:focus { background: #50bd54; }
 
-.edu-page__books-list li img { margin: 0 auto 10px; box-shadow: 0 4px 7px 0 rgba(84, 84, 84, 0.54); }
+.edu-page__books-list li img { margin: 0 auto 10px; box-shadow: 0 4px 7px 0 rgba(84, 84, 84, 0.54); max-width: 200px; }
 
 .edu-page__books-list li span { margin: 0 0 20px; display: block; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 14px; line-height: 1.2em; font-weight: 400; color: #404040; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
 
@@ -909,6 +965,20 @@ The `sprites` mixin generates identical output to the CSS template
 .edu-page__books-list-right { position: absolute; top: 50%; right: 40px; margin: -27px -15px 0 0; cursor: pointer; background-image: url(images/sprite.png); background-position: -363px -124px; width: 30px; height: 55px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 .edu-page__books-list-right:hover, .edu-page__books-list-right:focus { background-image: url(images/sprite.png); background-position: -363px -179px; width: 30px; height: 55px; -webkit-transform: none; transform: none; }
+
+.edu-page--all .edu-page__articles-right, .edu-page--all .edu-page__articles-left { display: none; }
+
+.edu-page--all .edu-page__articles li { width: 30%; margin: 0 1.66% 30px; }
+
+.edu-page--all .edu-page__books-list-left, .edu-page--all .edu-page__books-list-right { display: none; }
+
+.edu-page--all .edu-page__books-list ul { font-size: 0; line-height: 0; }
+
+.edu-page--all .edu-page__books-list ul li { display: inline-block; vertical-align: top; width: 18%; margin: 0 1%; }
+
+.edu-page--all .edu-page__books-list ul li img { max-width: 175px; }
+
+.edu-page--all .edu-page__all { display: none; }
 
 /*end of edu-page*/
 /*business-cases-unit*/
@@ -932,20 +1002,90 @@ The `sprites` mixin generates identical output to the CSS template
 
 .business-cases-unit__nav li:last-child { clear: both; }
 
-.business-cases-unit__content { margin: 0 0 50px; }
+.business-cases-unit__content { margin: 0; }
 
-.business-cases-unit__content h3 { margin: 0 0 20px; }
+.business-cases-unit__content > li { padding: 30px 50px; }
+
+.business-cases-unit__content > li::after { content: ''; display: table; clear: both; }
+
+.business-cases-unit__content > li.fon { background: url(images/gray-fon-50.png) repeat; }
+
+.business-cases-unit__content h3 { margin: 30px 0 20px; }
+
+.business-cases-unit__content-img { margin-left: 10px; float: right; width: 600px; }
+
+.business-cases-unit__content-img img { vertical-align: bottom; max-width: 100%; }
 
 .business-cases-unit__content p { margin: 0 0 20px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
 
-.business-cases-unit__content ul li { margin: 0 0 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.business-cases-unit__content p a { color: #616161; text-decoration: underline; }
 
-.business-cases-unit__footer { clear: both; }
+.business-cases-unit__content p a:hover { color: #616161; text-decoration: none; }
 
-.business-cases-unit__footer p { margin: 0 0 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+.business-cases-unit__content ul { margin: 0 0 50px; }
+
+.business-cases-unit__content ul li { margin: 0 0 25px; padding: 0 0 0 35px; position: relative; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.business-cases-unit__content ul li a:link, .business-cases-unit__content ul li a:visited { color: #616161; text-decoration: underline; }
+
+.business-cases-unit__content ul li a:hover { color: #616161; text-decoration: none; }
+
+.business-cases-unit__content ul li::before { content: ''; position: absolute; top: 0; left: 0; background-image: url(images/sprite.png); background-position: -386px -289px; width: 15px; height: 23px; }
+
+.business-cases-unit__footer { padding: 5% 25%; clear: both; background: url(images/arrow.png) no-repeat bottom right, #4cb050 url(images/arrow.png) no-repeat bottom left; }
+
+.business-cases-unit__footer p { margin: 0 0 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #fff; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
 
 .business-cases-unit__footer p a { color: #616161; text-decoration: underline; }
 
-.business-cases-unit__footer h3 { margin: 0 0 20px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 36px; line-height: 1.5em; font-weight: 400; color: #000; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
+.business-cases-unit__footer p a:hover { color: #616161; text-decoration: none; }
+
+.business-cases-unit__footer h3 { margin: 0 0 20px; font-family: Roboto-Bold, Helvetica, sans-serif; font-size: 36px; line-height: 1.5em; font-weight: 400; color: #212e50; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: center; }
 
 /*end of business-cases-unit*/
+/*edu-page-unit*/
+.edu-page-unit .container { padding: 80px 80px 40px; box-sizing: border-box; }
+
+.edu-page-unit h2 { margin: 0 0 15px; }
+
+.edu-page-unit h3 { margin: 30px 0 15px; }
+
+.edu-page-unit h3.section-subtitle { margin-bottom: 30px; }
+
+.edu-page-unit p { margin: 0 0 15px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.edu-page-unit ul { margin: 0 0 15px; }
+
+.edu-page-unit ul li { margin: 0 0 10px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.edu-page-unit__book { float: left; max-width: 200px; padding: 0 20px 20px 0; }
+
+.edu-page-unit__book img { max-width: 200px; padding: 0 20px 0 0; }
+
+.edu-page-unit--article .container { padding: 80px 300px 40px 80px; }
+
+/*end of edu-page-unit*/
+/*assessment*/
+.assessment .container { padding: 80px 80px 40px; box-sizing: border-box; }
+
+.assessment h2 { margin: 0 0 50px; }
+
+.assessment h3 { margin: 30px 0; }
+
+.assessment p { margin: 0 0 20px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; }
+
+.assessment p a { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #fff; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; }
+
+.assessment ul { margin: 0 0 50px; }
+
+.assessment ul li { margin: 0 0 25px; padding: 0 0 0 35px; font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.2em; font-weight: 400; color: #616161; text-transform: none; text-decoration: none; letter-spacing: 0; text-align: left; position: relative; }
+
+.assessment ul li::before { content: ''; position: absolute; top: 0; left: 0; background-image: url(images/sprite.png); background-position: -386px -289px; width: 15px; height: 23px; }
+
+.assessment ul li a { font-family: Roboto-Regular, Helvetica, sans-serif; font-size: 18px; line-height: 1.5em; font-weight: 400; color: #616161; text-transform: none; text-decoration: underline; letter-spacing: 0; text-align: left; }
+
+.assessment ul li a:hover { color: #616161; text-decoration: none; }
+
+.assessment .fon { padding: 20px; background: rgba(106, 220, 144, 0.3); }
+
+/*end of assessment*/
